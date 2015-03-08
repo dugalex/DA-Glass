@@ -1,0 +1,142 @@
+|LF_STANDARD|
+|LF_IMAGES|
+|LF_TICKET|
+|LF_CUSTOM|
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=|LANG_ENCODING|" />
+	<title>|HOSTNAME| - |DEAMONNAME| v|VERSION|</title>
+	<link rel='icon' href='/IMG_SKIN_ICON' type='image/x-icon'>
+	<script language="JavaScript">
+	<!-- // start preload code
+	//timer for auto-logout
+		function log_me_out()
+		{
+			location.href = '/CMD_LOGOUT';
+		}
+		var logout_timeout = setTimeout('log_me_out();', |SESSION_MINUTES|*60*1000);
+
+	// done with preload code -->
+	</script>
+	
+	<link href="/CSS_MAIN?v=|VERSION|" type="text/css" rel="stylesheet" />
+	<link href="/CSS_ICONS" type="text/css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" type="text/css" rel="stylesheet">
+	<link href="/CSS_GRAY" type="text/css" rel="stylesheet" media="screen" title="gray-theme" />
+	<!--[if lte IE 9]>
+	<link href="/CSS_IE8" type="text/css" rel="stylesheet" />
+	<![endif]-->
+	<link href="/CSS_BLUE" type="text/css" rel="alternate stylesheet" media="screen" title="blue-theme" />
+	<link href="/CSS_GREEN" type="text/css" rel="alternate stylesheet" media="screen" title="green-theme" />
+	<link href="/CSS_YELLOW" type="text/css" rel="alternate stylesheet" media="screen" title="yellow-theme" />
+	<link href="/CSS_PINK" type="text/css" rel="alternate stylesheet" media="screen" title="pink-theme" />
+	<link href="/CSS_PURPLE" type="text/css" rel="alternate stylesheet" media="screen" title="purple-theme" />
+	<link href="/CSS_RED" type="text/css" rel="alternate stylesheet" media="screen" title="red-theme" />
+	<link href="/CSS_BROWN" type="text/css" rel="alternate stylesheet" media="screen" title="brown-theme" />
+	<link href="/CSS_BLACK" type="text/css" rel="alternate stylesheet" media="screen" title="black-theme" />
+|*if TABLE_HIGHLIGHTING="1"|
+	<script type="text/javascript">
+	<!-- // start preload code
+	function tr_add_highlight()
+	{
+		add_highlight(this, 'list','listhighlight','list2','list2highlight','listwrap','listwraphighlight','listwrap2','listwrap2highlight');
+	}
+	function tr_remove_highlight()
+	{
+		add_highlight(this, 'listhighlight','list','list2highlight','list2','listwraphighlight','listwrap','listwrap2highlight','listwrap2');
+	}
+	function add_highlight(ob,h1,l1,h2,l2,h3,l3,h4,l4)
+	{
+		var tds = ob.getElementsByTagName('td');
+		for(var d=0; d<tds.length; d++)
+		{
+			switch (tds[d].className)
+			{
+				case h1	:	tds[d].className = l1; break;
+				case h2	:	tds[d].className = l2; break;
+				case h3	:	tds[d].className = l3; break;
+				case h4	:	tds[d].className = l4; break;
+
+			}
+		}
+	}
+	function make_tables_highlightable()
+	{
+		var tables = document.getElementsByTagName('table');
+		for (var tbl=0; tbl<tables.length; tbl++)
+		{
+			if (tables[tbl].className.indexOf('table-highlight') != -1)
+			{
+				var trs = tables[tbl].getElementsByTagName('tr');
+				for(var tr=0; tr<trs.length; tr++)
+				{
+					trs[tr].onmouseover = tr_add_highlight;
+					trs[tr].onmouseout = tr_remove_highlight;
+				}
+			}
+		}
+	}
+	// done with preload code -->
+	</script>
+|*endif|
+<script src="/CSS_SWITCH" type="text/javascript">
+
+/***********************************************
+* Style Sheet Switcher v1.1- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+
+</script>
+
+</head>
+
+<body>
+
+<table style="width:980px;" align="center" cellspacing="15" cellpadding="0">
+	<tr>
+		<td valign="top">
+		<!--[if lte IE 9]>
+			<table class="table warning" style="width:100%; height:50px" cellspacing="1">
+				<tr>
+					<td class="title" style="text-align:center">YOU ARE USING AN OUTDATED VERSION OF INTERNET EXPLORER - PLEASE UPGRADE TO A NEWER VERSION OR USE FIREFOX OR CHROME</td>
+				</tr>
+			</table>
+			</br>
+		<![endif]-->
+			<table class="table" style="width:100%; height:150px" cellspacing="1">
+				<tr>
+					<td class="title">
+						<div class="colors">
+							<a href="javascript:chooseStyle('gray-theme', 999)" title="Gray" checked="checked"><div class="gray"></div></a>
+							<a href="javascript:chooseStyle('blue-theme', 999)" title="Blue"><div class="blue"></div></a>
+							<a href="javascript:chooseStyle('green-theme', 999)" title="Green"><div class="green"></div></a>
+							<a href="javascript:chooseStyle('yellow-theme', 999)" title="Yellow"><div class="yellow"></div></a>
+							<a href="javascript:chooseStyle('pink-theme', 999)" title="Pink"><div class="pink"></div></a>
+							<a href="javascript:chooseStyle('purple-theme', 999)" title="Purple"><div class="purple"></div></a>
+							<a href="javascript:chooseStyle('red-theme', 999)" title="Red"><div class="red"></div></a>
+							<a href="javascript:chooseStyle('brown-theme', 999)" title="Brown"><div class="brown"></div></a>
+							<a href="javascript:chooseStyle('black-theme', 999)" title="Black"><div class="black"></div></a>
+						</div>
+						<div class="welcome">|WELCOME_BACK_TEXT|, |USERNAME| (|LAST_LOGIN_FROM_TEXT|: |LASTHOST|) <a href="/CMD_TICKET?sort1=-1" class="msg" title="|LANG_MESS_SYS|">|*if NEWMESSAGES!="0"|<span class="count_notice blink">|NEWMESSAGES|</span>|*else|<span class="count_notice_none"></span>|*endif|</a></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="header" valign="bottom">
+						<table style="width:100%" cellspacing="0" cellpadding="0">
+							<tr>
+								<td>
+									<img alt="|DEAMONNAME|" longdesc="|DEAMONNAME| v|VERSION|" src="/IMG_SKIN_LOGO" />
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table style="width:100%; height:30px" cellspacing="0" cellpadding="0">
+				<tr>
+					<td valign="top">

@@ -1,0 +1,140 @@
+﻿/* 
+	Main Color: 255,150,255;
+	Menu Color: 255,210,255;
+	Link Color: 255,50,255;
+*/
+
+body {
+	background:rgba(255,150,255,0.50) url('/IMG_SKIN_BG_PINK') center top fixed no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+a:hover, a.tree:hover, a.title:hover, a.listtitle:hover, td.footer a:hover, a.tabtext:hover, ul#menu li a:hover, ul#menu li ul li a:hover, input[type=button]:hover, input[type=submit]:hover, input[type=checkbox]:hover {
+	color:rgb(255,50,255);
+}
+input, textarea, select {
+	background:rgba(255,150,255,0.15);
+	background:linear-gradient(top, rgba(255,150,255,0.05) 0%, rgba(255,150,255,0.15) 100%);
+	background:-o-linear-gradient(top, rgba(255,150,255,0.05) 0%, rgba(255,150,255,0.15) 100%);
+	background:-ms-linear-gradient(top, rgba(255,150,255,0.05) 0%, rgba(255,150,255,0.15) 100%);
+	background:-moz-linear-gradient(top, rgba(255,150,255,0.05) 0%, rgba(255,150,255,0.15) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,150,255,0.05) 0%, rgba(255,150,255,0.15) 100%);
+}
+input[type=button], input[type=submit] {
+	background:linear-gradient(top, rgba(255,150,255,0.25) 49%, rgba(255,150,255,0.35) 50%, rgba(255,150,255,0.20) 100%);
+	background:-o-linear-gradient(top, rgba(255,150,255,0.25) 49%, rgba(255,150,255,0.35) 50%, rgba(255,150,255,0.20) 100%);
+	background:-ms-linear-gradient(top, rgba(255,150,255,0.25) 49%, rgba(255,150,255,0.35) 50%, rgba(255,150,255,0.20) 100%);
+	background:-moz-linear-gradient(top, rgba(255,150,255,0.25) 49%, rgba(255,150,255,0.35) 50%, rgba(255,150,255,0.20) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,150,255,0.25) 49%, rgba(255,150,255,0.35) 50%, rgba(255,150,255,0.20) 100%);
+}
+input[type=button]:hover, input[type=submit]:hover {
+	background:linear-gradient(top, rgba(255,150,255,0.01) 49%, rgba(255,150,255,0.11) 50%, rgba(255,150,255,0.06) 100%);
+	background:-o-linear-gradient(top, rgba(255,150,255,0.01) 49%, rgba(255,150,255,0.11) 50%, rgba(255,150,255,0.06) 100%);
+	background:-ms-linear-gradient(top, rgba(255,150,255,0.01) 49%, rgba(255,150,255,0.11) 50%, rgba(255,150,255,0.06) 100%);
+	background:-moz-linear-gradient(top, rgba(255,150,255,0.01) 49%, rgba(255,150,255,0.11) 50%, rgba(255,150,255,0.06) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,150,255,0.01) 49%, rgba(255,150,255,0.11) 50%, rgba(255,150,255,0.06) 100%);
+}
+ul#menu li ul li {
+	background:rgb(255,210,255);
+}
+td.tab {
+	background:rgba(255,150,255,0.30);
+}
+td.tabselected {
+	background:rgba(255,150,255,0.20);
+}
+.highlighted {
+	background:rgba(255,150,255,0.20);
+	border:1px solid rgba(255,150,255,0.75);
+}
+td.list, td.listwrap, .bar-row2 {
+	border-bottom:1px solid rgba(255,150,255,0.30);
+	background:rgba(255,150,255,0.20);
+	background:linear-gradient(top, rgba(255,150,255,0.15) 0%, rgba(255,150,255,0.25) 100%);
+	background:-o-linear-gradient(top, rgba(255,150,255,0.15) 0%, rgba(255,150,255,0.25) 100%);
+	background:-ms-linear-gradient(top, rgba(255,150,255,0.15) 0%, rgba(255,150,255,0.25) 100%);
+	background:-moz-linear-gradient(top, rgba(255,150,255,0.15) 0%, rgba(255,150,255,0.25) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,150,255,0.15) 0%, rgba(255,150,255,0.25) 100%);
+}
+td.list2, td.listwrap2, .bar-row1 {
+	border-bottom:1px solid rgba(255,150,255,0.10);
+	background:rgba(255,150,255,0.15);
+	background:linear-gradient(top, rgba(255,150,255,0.25) 0%, rgba(255,150,255,0.15) 100%);
+	background:-o-linear-gradient(top, rgba(255,150,255,0.25) 0%, rgba(255,150,255,0.15) 100%);
+	background:-ms-linear-gradient(top, rgba(255,150,255,0.25) 0%, rgba(255,150,255,0.15) 100%);
+	background:-moz-linear-gradient(top, rgba(255,150,255,0.25) 0%, rgba(255,150,255,0.15) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,150,255,0.25) 0%, rgba(255,150,255,0.15) 100%);
+}
+.listhighlight, .listwraphighlight {
+	border-bottom:1px solid rgba(255,150,255,0.20);
+	background:rgba(255,150,255,0.10);
+	background:linear-gradient(top, rgba(255,150,255,0.05) 0%, rgba(255,150,255,0.15) 100%);
+	background:-o-linear-gradient(top, rgba(255,150,255,0.05) 0%, rgba(255,150,255,0.15) 100%);
+	background:-ms-linear-gradient(top, rgba(255,150,255,0.05) 0%, rgba(255,150,255,0.15) 100%);
+	background:-moz-linear-gradient(top, rgba(255,150,255,0.05) 0%, rgba(255,150,255,0.15) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,150,255,0.05) 0%, rgba(255,150,255,0.15) 100%);
+}
+.list2highlight, .listwrap2highlight {
+	border-bottom:1px solid rgba(255,150,255,0.10);
+	background:rgba(255,150,255,0.10);
+	background:linear-gradient(top, rgba(255,150,255,0.15) 0%, rgba(255,150,255,0.05) 100%);
+	background:-o-linear-gradient(top, rgba(255,150,255,0.15) 0%, rgba(255,150,255,0.05) 100%);
+	background:-ms-linear-gradient(top, rgba(255,150,255,0.15) 0%, rgba(255,150,255,0.05) 100%);
+	background:-moz-linear-gradient(top, rgba(255,150,255,0.15) 0%, rgba(255,150,255,0.05) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,150,255,0.15) 0%, rgba(255,150,255,0.05) 100%);
+}
+.off_white {
+	color:1px solid rgba(255,150,255,0.75);
+}
+.trim {
+	border:1px solid rgba(255,150,255,0.75);
+}
+.top-border {
+	border-top:1px solid rgba(255,150,255,0.75);
+}
+#livesearch {
+	background:rgba(255,150,255,0.20);
+}
+.hoverin {
+		background:rgba(255,150,255,0.30);
+}
+.hoverout {
+		background:rgba(255,150,255,0.15);
+}
+.count_notice_none {
+	background:rgba(255,150,255,0.50);
+	background:linear-gradient(top, rgba(255,150,255,0.70) 49%, rgba(255,150,255,0.65) 50%, rgba(255,150,255,0.55) 100%);
+	background:-o-linear-gradient(top, rgba(255,150,255,0.70) 49%, rgba(255,150,255,0.65) 50%, rgba(255,150,255,0.55) 100%);
+	background:-ms-linear-gradient(top, rgba(255,150,255,0.70) 49%, rgba(255,150,255,0.65) 50%, rgba(255,150,255,0.55) 100%);
+	background:-moz-linear-gradient(top, rgba(255,150,255,0.70) 49%, rgba(255,150,255,0.65) 50%, rgba(255,150,255,0.55) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,150,255,0.70) 49%, rgba(255,150,255,0.65) 50%, rgba(255,150,255,0.55) 100%);
+}
+.barbg {
+	background:rgba(255,150,255,0.20);
+	background:linear-gradient(top, rgba(255,150,255,0.15) 49%, rgba(255,150,255,0.25) 50%, rgba(255,150,255,0.20) 100%);
+	background:-o-linear-gradient(top, rgba(255,150,255,0.15) 49%, rgba(255,150,255,0.25) 50%, rgba(255,150,255,0.20) 100%);
+	background:-ms-linear-gradient(top, rgba(255,150,255,0.15) 49%, rgba(255,150,255,0.25) 50%, rgba(255,150,255,0.20) 100%);
+	background:-moz-linear-gradient(top, rgba(255,150,255,0.15) 49%, rgba(255,150,255,0.25) 50%, rgba(255,150,255,0.20) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,150,255,0.15) 49%, rgba(255,150,255,0.25) 50%, rgba(255,150,255,0.20) 100%);
+}
+.expand_toggle_neg:active, .expand_toggle_plus:active {
+	background:rgba(255,150,255,0.50);
+	background:linear-gradient(top, rgba(255,150,255,0.90) 49%, rgba(255,150,255,0.85) 50%, rgba(255,150,255,0.65) 100%);
+	background:-o-linear-gradient(top, rgba(255,150,255,0.90) 49%, rgba(255,150,255,0.85) 50%, rgba(255,150,255,0.65) 100%);
+	background:-ms-linear-gradient(top, rgba(255,150,255,0.90) 49%, rgba(255,150,255,0.85) 50%, rgba(255,150,255,0.65) 100%);
+	background:-moz-linear-gradient(top, rgba(255,150,255,0.90) 49%, rgba(255,150,255,0.85) 50%, rgba(255,150,255,0.65) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,150,255,0.90) 49%, rgba(255,150,255,0.85) 50%, rgba(255,150,255,0.65) 100%);
+	border:1px solid rgba(255,150,255,0.75);
+}
+.expand_toggle_neg, .expand_toggle_plus {
+	background:rgba(255,150,255,0.50);
+	background:linear-gradient(top, rgba(255,150,255,0.70) 49%, rgba(255,150,255,0.65) 50%, rgba(255,150,255,0.55) 100%);
+	background:-o-linear-gradient(top, rgba(255,150,255,0.70) 49%, rgba(255,150,255,0.65) 50%, rgba(255,150,255,0.55) 100%);
+	background:-ms-linear-gradient(top, rgba(255,150,255,0.70) 49%, rgba(255,150,255,0.65) 50%, rgba(255,150,255,0.55) 100%);
+	background:-moz-linear-gradient(top, rgba(255,150,255,0.70) 49%, rgba(255,150,255,0.65) 50%, rgba(255,150,255,0.55) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,150,255,0.70) 49%, rgba(255,150,255,0.65) 50%, rgba(255,150,255,0.55) 100%);
+	border:1px solid rgba(255,150,255,0.75);
+	cursor:pointer;
+}
