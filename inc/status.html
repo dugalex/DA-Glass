@@ -46,9 +46,9 @@ class skclass {
 		settype($five, "float");
 		settype($fifteen, "float");
 		if ($color) {
-			if ($one >= 5) $one = '<span style="color:red;">'.number_format($load1, 2, '.', '').'</span>';
-			if ($five >= 5) $five = '<span style="color:red;">'.number_format($load5, 2, '.', '').'</span>';
-			if ($fifteen >= 5) $fifteen = '<span style="color:red;">'.number_format($load15, 2, '.', '').'</span>';
+                        if ($one >= 5) $one = '<span style="color:red;">'.number_format($one, 2, '.', '').'</span>';
+                        if ($five >= 5) $five = '<span style="color:red;">'.number_format($five, 2, '.', '').'</span>';
+                        if ($fifteen >= 5) $fifteen = '<span style="color:red;">'.number_format($fifteen, 2, '.', '').'</span>';
         }
         return "{$one}, {$five}, {$fifteen}";
 	}
