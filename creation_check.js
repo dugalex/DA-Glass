@@ -5,7 +5,7 @@ function ajax_run_js(str)
 	if (str == '')
 		return;
 
-	//console.log(str);
+	console.log(str);
 
 	eval(str);
 }
@@ -72,4 +72,12 @@ function ajax_checkDomain()
 	var url="CMD_AJAX_CHECK_DOMAIN?rand="+Math.random();
 
 	ajax_start(url, 'domain', 'domain='+encodeURIComponent(d));
+}
+
+function set_admin_level_updates()
+{
+	var pu=document.getElementById("plugin_updates");
+	var url="CMD_AJAX_GET_COUNTS?plugin_updates=yes&program=yes&rand="+Math.random();
+
+	ajax_start(url, 'plugin_updates', '');
 }
