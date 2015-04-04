@@ -46,7 +46,7 @@ select:hover {
 	width:300px;
 	float:left;
 }
-.gray, .blue, .green, .yellow, .pink, .purple, .red, .brown, .black, .service_on, .service_off {
+.gray, .blue, .green, .yellow, .pink, .purple, .red, .brown, .black, .bw, .service_on, .service_off {
 	float:left;
 	width:15px;
 	height:15px;
@@ -128,6 +128,14 @@ select:hover {
 	background:-ms-linear-gradient(top, rgba(1,1,1,0.65) 49%, rgba(1,1,1,0.75) 50%, rgba(1,1,1,0.55) 100%);
 	background:-moz-linear-gradient(top, rgba(1,1,1,0.65) 49%, rgba(1,1,1,0.75) 50%, rgba(1,1,1,0.55) 100%);
 	background:-webkit-linear-gradient(top, rgba(1,1,1,0.65) 49%, rgba(1,1,1,0.75) 50%, rgba(1,1,1,0.55) 100%);
+}
+.bw {
+	background:rgba(1,1,1,0.65);
+	background:linear-gradient(bottom, rgba(255,255,255,0.85) 45%, rgba(1,1,1,0.55) 46%, rgba(1,1,1,0.75) 100%);
+	background:-o-linear-gradient(bottom, rgba(255,255,255,0.85) 45%, rgba(1,1,1,0.55) 46%, rgba(1,1,1,0.75) 100%);
+	background:-ms-linear-gradient(bottom, rgba(255,255,255,0.85) 45%, rgba(1,1,1,0.55) 46%, rgba(1,1,1,0.75) 100%);
+	background:-moz-linear-gradient(bottom, rgba(255,255,255,0.85) 45%, rgba(1,1,1,0.55) 46%, rgba(1,1,1,0.75) 100%);
+	background:-webkit-linear-gradient(bottom, rgba(255,255,255,0.85) 45%, rgba(1,1,1,0.55) 46%, rgba(1,1,1,0.75) 100%);
 }
 .service_on, .service_off {
 	float:right;
@@ -268,15 +276,16 @@ table.table {
 }
 table.tabs {
 	width:100%;
-	border-width:1;
-	border-bottom-style:solid;
-	border-left-style:none;
-	border-top-style:none;
-	border-right-style:none;	
-	border-color:rgb(128,128,128);
+	border:1px solid rgb(128,128,128);	
 	border-collapse:collapse;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
 }
 td.tab {
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
 	border:1px solid rgb(128,128,128);
 	white-space:nowrap;	
 }
@@ -358,7 +367,7 @@ td.footer {
 	float:left;
 }
 .footer_panel {
-	width:200px;
+	width:300px;
 	float:right;
 	text-align:right;
 	padding-right:5px;
@@ -394,7 +403,6 @@ td.greenlist, td.greenlistwrap, td.greenlist2, td.greenlistwrap2 {
 	background: -moz-linear-gradient(#C1FFC1, #B2FFB2); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(#C1FFC1, #B2FFB2); /* Standard syntax */
 }
-
 td.redlist, td.redlistwrap, td.redlist2, td.redlistwrap2 {
 	background: #FFB9B9;
 	background: -webkit-linear-gradient(#FFCDCD, #FFB9B9); /* For Safari 5.1 to 6.0 */

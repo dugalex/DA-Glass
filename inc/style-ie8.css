@@ -41,6 +41,12 @@ td.title, td.footer, td.listtitle, .blue_gradient {
 	background:#555;
 	color:#efefef;
 }
+td.title a, td.footer a, td.listtitle a, .blue_gradient a {
+	color:#efefef;
+}
+td.title a:hover, td.footer a:hover, td.listtitle a:hover, .blue_gradient a:hover {
+	color:#379BD7;
+}
 td.header, td.content, td.stats {
 	background:#e7e7e7;
 }
@@ -92,4 +98,7 @@ hr {
 .barbg {
 	border:1px solid #d7d7d7;
 	background:#eee;
+}
+.count_notice, .count_notice_none {
+	background:transparent;
 }

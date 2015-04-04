@@ -38,6 +38,7 @@
 	<link href="/CSS_RED" type="text/css" rel="alternate stylesheet" media="screen" title="red-theme" />
 	<link href="/CSS_BROWN" type="text/css" rel="alternate stylesheet" media="screen" title="brown-theme" />
 	<link href="/CSS_BLACK" type="text/css" rel="alternate stylesheet" media="screen" title="black-theme" />
+	<link href="/CSS_BW" type="text/css" rel="alternate stylesheet" media="screen" title="bw-theme" />
 |*if TABLE_HIGHLIGHTING="1"|
 	<script type="text/javascript">
 	<!-- // start preload code
@@ -84,15 +85,12 @@
 	</script>
 |*endif|
 <script src="/CSS_SWITCH" type="text/javascript">
-
 /***********************************************
 * Style Sheet Switcher v1.1- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
 * This notice MUST stay intact for legal use
 * Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
 ***********************************************/
-
 </script>
-
 </head>
 
 <body>
@@ -103,7 +101,7 @@
 		<!--[if lte IE 9]>
 			<table class="table warning" style="width:100%; height:50px" cellspacing="1">
 				<tr>
-					<td class="title" style="text-align:center">YOU ARE USING AN OUTDATED VERSION OF INTERNET EXPLORER - PLEASE UPGRADE TO A NEWER VERSION OR USE FIREFOX OR CHROME</td>
+					<td class="redlist" style="text-align:center">YOU ARE USING AN OUTDATED BROWSER - PLEASE UPGRADE TO A NEWER VERSION OR USE <a href="https://www.mozilla.org/en-US/firefox/new" target="_blank">FIREFOX</a> / <a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank">CHROME</a></td>
 				</tr>
 			</table>
 			</br>
@@ -121,16 +119,17 @@
 							<a href="javascript:chooseStyle('red-theme', 999)" title="Red"><div class="red"></div></a>
 							<a href="javascript:chooseStyle('brown-theme', 999)" title="Brown"><div class="brown"></div></a>
 							<a href="javascript:chooseStyle('black-theme', 999)" title="Black"><div class="black"></div></a>
+							<a href="javascript:chooseStyle('bw-theme', 999)" title="Black&amp;White"><div class="bw"></div></a>
 						</div>
-						<div class="welcome">|WELCOME_BACK_TEXT|, |USERNAME| (|LAST_LOGIN_FROM_TEXT|: |LASTHOST|) <a href="/CMD_TICKET?sort1=-1" class="msg" title="|LANG_MESS_SYS|">|*if NEWMESSAGES!="0"|<span class="count_notice blink">|NEWMESSAGES|</span>|*else|<span class="count_notice_none"></span>|*endif|</a></div>
+						<div class="welcome">|WELCOME_BACK_TEXT|, |USERNAME| (|LAST_LOGIN_FROM_TEXT|: |LASTHOST|) <a href="/CMD_TICKET?sort1=-1" title="|LANG_MESS_SYS|">|*if NEWMESSAGES!="0"|<span class="count_notice blink">|NEWMESSAGES|</span>|*else|<span class="count_notice_none"></span>|*endif|</a></div>
 					</td>
 				</tr>
 				<tr>
 					<td class="header" valign="bottom">
-						<table style="width:100%" cellspacing="0" cellpadding="0">
+						<table style="width:100%; height:100px" cellspacing="0" cellpadding="0">
 							<tr>
 								<td>
-									<img alt="|DEAMONNAME|" longdesc="|DEAMONNAME| v|VERSION|" src="/IMG_SKIN_LOGO" />
+									<img style="padding-left:10px" alt="|DEAMONNAME|" longdesc="|DEAMONNAME| v|VERSION|" src="/IMG_SKIN_LOGO" />
 								</td>
 							</tr>
 						</table>

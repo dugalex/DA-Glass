@@ -36,6 +36,12 @@ input[type=button]:hover, input[type=submit]:hover {
 	background:-moz-linear-gradient(top, rgba(175,175,180,0.01) 49%, rgba(175,175,180,0.11) 50%, rgba(175,175,180,0.06) 100%);
 	background:-webkit-linear-gradient(top, rgba(175,175,180,0.01) 49%, rgba(175,175,180,0.11) 50%, rgba(175,175,180,0.06) 100%);
 }
+td.listtitle input, td.listtitle textarea, td.listtitle select {
+	color:rgba(255,255,255,0.75);
+}
+td.listtitle input:hover, td.listtitle textarea:hover, td.listtitle select:hover {
+	color:rgba(255,255,255,0.50);
+}
 ul#menu li a, ul#menu li ul li a:hover {
 	background:rgba(0,0,0,0.10);
 	background:linear-gradient(top, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.25) 100%);

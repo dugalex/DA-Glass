@@ -1,0 +1,138 @@
+﻿/* 
+	Main Color: 175,175,180;
+	Menu Color: 225,225,225;
+	Link Color: 50,125,200;
+*/
+
+body {
+	background:rgba(175,175,180,0.50) url('/IMG_SKIN_BG_GRAY') center top fixed no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+input, textarea, select {
+	color:rgba(0,0,0,0.75);
+	border:1px solid rgba(0,0,0,0.75);
+	background:rgba(0,0,0,0.15);
+	background:linear-gradient(top, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.15) 100%);
+	background:-o-linear-gradient(top, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.15) 100%);
+	background:-ms-linear-gradient(top, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.15) 100%);
+	background:-moz-linear-gradient(top, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.15) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.15) 100%);
+}
+input[type=button], input[type=submit] {
+	background:linear-gradient(top, rgba(0,0,0,0.01) 49%, rgba(0,0,0,0.11) 50%, rgba(0,0,0,0.06) 100%);
+	background:-o-linear-gradient(top, rgba(0,0,0,0.01) 49%, rgba(0,0,0,0.11) 50%, rgba(0,0,0,0.06) 100%);
+	background:-ms-linear-gradient(top, rgba(0,0,0,0.01) 49%, rgba(0,0,0,0.11) 50%, rgba(0,0,0,0.06) 100%);
+	background:-moz-linear-gradient(top, rgba(0,0,0,0.01) 49%, rgba(0,0,0,0.11) 50%, rgba(0,0,0,0.06) 100%);
+	background:-webkit-linear-gradient(top, rgba(0,0,0,0.01) 49%, rgba(0,0,0,0.11) 50%, rgba(0,0,0,0.06) 100%);
+}
+input[type=button]:hover, input[type=submit]:hover {
+	background:linear-gradient(top, rgba(255,255,255,0.15) 49%, rgba(255,255,255,0.25) 50%, rgba(255,255,255,0.10) 100%);
+	background:-o-linear-gradient(top, rgba(255,255,255,0.15) 49%, rgba(255,255,255,0.25) 50%, rgba(255,255,255,0.10) 100%);
+	background:-ms-linear-gradient(top, rgba(255,255,255,0.15) 49%, rgba(255,255,255,0.25) 50%, rgba(255,255,255,0.10) 100%);
+	background:-moz-linear-gradient(top, rgba(255,255,255,0.15) 49%, rgba(255,255,255,0.25) 50%, rgba(255,255,255,0.10) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,255,255,0.15) 49%, rgba(255,255,255,0.25) 50%, rgba(255,255,255,0.10) 100%);
+}
+td.listtitle input, td.listtitle textarea, td.listtitle select {
+	color:rgba(0,0,0,0.75);
+	border:1px solid rgba(0,0,0,0.75);
+	background:rgba(0,0,0,0.15);
+	background:linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.65) 100%);
+	background:-o-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.65) 100%);
+	background:-ms-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.65) 100%);
+	background:-moz-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.65) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.65) 100%);
+}
+td.listtitle input[type=button], td.listtitle input[type=submit] {
+	color:rgba(0,0,0,0.75);
+	background:linear-gradient(top, rgba(255,255,255,0.75) 49%, rgba(255,255,255,0.65) 50%, rgba(255,255,255,0.60) 100%);
+	background:-o-linear-gradient(top, rgba(255,255,255,0.75) 49%, rgba(255,255,255,0.65) 50%, rgba(255,255,255,0.60) 100%);
+	background:-ms-linear-gradient(top, rgba(255,255,255,0.75) 49%, rgba(255,255,255,0.65) 50%, rgba(255,255,255,0.60) 100%);
+	background:-moz-linear-gradient(top, rgba(255,255,255,0.75) 49%, rgba(255,255,255,0.65) 50%, rgba(255,255,255,0.60) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,255,255,0.75) 49%, rgba(255,255,255,0.65) 50%, rgba(255,255,255,0.60) 100%);
+}
+td.listtitle input[type=button]:hover, td.listtitle input[type=submit]:hover {
+	color:rgba(0,0,0,0.50);
+	background:linear-gradient(top, rgba(255,255,255,0.85) 49%, rgba(255,255,255,0.75) 50%, rgba(255,255,255,0.70) 100%);
+	background:-o-linear-gradient(top, rgba(255,255,255,0.85) 49%, rgba(255,255,255,0.75) 50%, rgba(255,255,255,0.70) 100%);
+	background:-ms-linear-gradient(top, rgba(255,255,255,0.85) 49%, rgba(255,255,255,0.75) 50%, rgba(255,255,255,0.70) 100%);
+	background:-moz-linear-gradient(top, rgba(255,255,255,0.85) 49%, rgba(255,255,255,0.75) 50%, rgba(255,255,255,0.70) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,255,255,0.85) 49%, rgba(255,255,255,0.75) 50%, rgba(255,255,255,0.70) 100%);
+}
+ul#menu li a, ul#menu li ul li a:hover {
+	background:rgba(255,255,255,0.75);
+	background:linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.50) 100%);
+	background:-o-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.50) 100%);
+	background:-ms-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.50) 100%);
+	background:-moz-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.50) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.50) 100%);
+}
+ul#menu li a:hover, ul#menu li ul li a  {
+	background:rgba(255,255,255,0.50);
+	background:linear-gradient(top, rgba(255,255,255,0.50) 0%, rgba(255,255,255,0.75) 100%);
+	background:-o-linear-gradient(top, rgba(255,255,255,0.50) 0%, rgba(255,255,255,0.75) 100%);
+	background:-ms-linear-gradient(top, rgba(255,255,255,0.50) 0%, rgba(255,255,255,0.75) 100%);
+	background:-moz-linear-gradient(top, rgba(255,255,255,0.50) 0%, rgba(255,255,255,0.75) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,255,255,0.50) 0%, rgba(255,255,255,0.75) 100%);
+}
+ul#menu li ul li {
+	background:rgb(225,225,225);
+}
+td.header, td.content, td.stats {
+	background:rgba(255,255,255,0.75);
+	background:linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.50) 100%);
+	background:-o-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.50) 100%);
+	background:-ms-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.50) 100%);
+	background:-moz-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.50) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.50) 100%);
+}
+td.list, td.listwrap, .bar-row2 {
+	border-bottom:1px solid rgba(175,175,180,0.30);
+	background:rgba(175,175,180,0.20);
+	background:linear-gradient(top, rgba(175,175,180,0.15) 0%, rgba(175,175,180,0.25) 100%);
+	background:-o-linear-gradient(top, rgba(175,175,180,0.15) 0%, rgba(175,175,180,0.25) 100%);
+	background:-ms-linear-gradient(top, rgba(175,175,180,0.15) 0%, rgba(175,175,180,0.25) 100%);
+	background:-moz-linear-gradient(top, rgba(175,175,180,0.15) 0%, rgba(175,175,180,0.25) 100%);
+	background:-webkit-linear-gradient(top, rgba(175,175,180,0.15) 0%, rgba(175,175,180,0.25) 100%);
+}
+td.list2, td.listwrap2, .bar-row1 {
+	border-bottom:1px solid rgba(175,175,180,0.10);
+	background:rgba(175,175,180,0.15);
+	background:linear-gradient(top, rgba(175,175,180,0.25) 0%, rgba(175,175,180,0.15) 100%);
+	background:-o-linear-gradient(top, rgba(175,175,180,0.25) 0%, rgba(175,175,180,0.15) 100%);
+	background:-ms-linear-gradient(top, rgba(175,175,180,0.25) 0%, rgba(175,175,180,0.15) 100%);
+	background:-moz-linear-gradient(top, rgba(175,175,180,0.25) 0%, rgba(175,175,180,0.15) 100%);
+	background:-webkit-linear-gradient(top, rgba(175,175,180,0.25) 0%, rgba(175,175,180,0.15) 100%);
+}
+.listhighlight, .listwraphighlight {
+	color:rgba(255,255,255,0.75);
+	border-bottom:1px solid rgba(0,0,0,0.20);
+	background:rgba(0,0,0,0.10);
+	background:linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.75) 100%);
+	background:-o-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.75) 100%);
+	background:-ms-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.75) 100%);
+	background:-moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.75) 100%);
+	background:-webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.75) 100%);
+}
+.list2highlight, .listwrap2highlight {
+	color:rgba(255,255,255,0.75);
+	border-bottom:1px solid rgba(0,0,0,0.20);
+	background:rgba(0,0,0,0.10);
+	background:linear-gradient(top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.65) 100%);
+	background:-o-linear-gradient(top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.65) 100%);
+	background:-ms-linear-gradient(top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.65) 100%);
+	background:-moz-linear-gradient(top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.65) 100%);
+	background:-webkit-linear-gradient(top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.65) 100%);
+}
+.list2highlight a, .listwrap2highlight a {
+	color:rgba(255,255,255,0.75);
+}.listhighlight a, .listwraphighlight a {
+	color:rgba(255,255,255,0.75);
+}
+.list2highlight a:hover, .listwrap2highlight a:hover {
+	color:rgb(50,125,200);
+}.listhighlight a:hover, .listwraphighlight a:hover {
+	color:rgb(50,125,200);
+}
