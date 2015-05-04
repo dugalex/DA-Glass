@@ -67,8 +67,9 @@ function server_addr() {
 }
  
 $servArr=$sk->getServices();
+
 ?>
-<tr><td class="stats_left">|LANG_SERVICES_LOAD|</td><td class="stats_right"><?php echo $sk->uptime(true);?></td></tr>
+<tr><td class="stats_left">|LANG_SERVER_LOAD|</td><td class="stats_right"><?php echo $sk->uptime(true);?></td></tr>
 <?php
 if(is_array($servArr) && count($servArr)>1) {
 	foreach($servArr as $service => $val) {
@@ -81,4 +82,5 @@ if(is_array($servArr) && count($servArr)>1) {
 	}
 }
 ?>
+
 DONE|

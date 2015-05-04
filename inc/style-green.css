@@ -1,10 +1,4 @@
-﻿/* 
-	Main Color: 100,200,100;
-	Menu Color: 200,230,200;
-	Link Color: 0,100,0;
-*/
-
-body {
+﻿body {
 	background:rgba(100,200,100,0.50) url('/IMG_SKIN_BG_GREEN') center top fixed no-repeat;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -36,14 +30,8 @@ input[type=button]:hover, input[type=submit]:hover {
 	background:-moz-linear-gradient(top, rgba(100,200,100,0.01) 49%, rgba(100,200,100,0.11) 50%, rgba(100,200,100,0.06) 100%);
 	background:-webkit-linear-gradient(top, rgba(100,200,100,0.01) 49%, rgba(100,200,100,0.11) 50%, rgba(100,200,100,0.06) 100%);
 }
-td.listtitle input, td.listtitle textarea, td.listtitle select {
-	color:rgba(255,255,255,0.75);
-}
-td.listtitle input:hover, td.listtitle textarea:hover, td.listtitle select:hover {
-	color:rgba(255,255,255,0.50);
-}
 ul#menu li ul li {
-	background:rgb(200,230,200);
+	background:rgba(200,230,200,0.95);
 }
 td.tab {
 	background:rgba(100,200,100,0.30);

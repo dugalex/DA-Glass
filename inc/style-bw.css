@@ -1,10 +1,4 @@
-﻿/* 
-	Main Color: 175,175,180;
-	Menu Color: 225,225,225;
-	Link Color: 50,125,200;
-*/
-
-body {
+﻿body {
 	background:rgba(175,175,180,0.50) url('/IMG_SKIN_BG_GRAY') center top fixed no-repeat;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -38,7 +32,7 @@ input[type=button]:hover, input[type=submit]:hover {
 td.listtitle input, td.listtitle textarea, td.listtitle select {
 	color:rgba(0,0,0,0.75);
 	border:1px solid rgba(0,0,0,0.75);
-	background:rgba(0,0,0,0.15);
+	background:rgba(0,0,0,0.70);
 	background:linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.65) 100%);
 	background:-o-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.65) 100%);
 	background:-ms-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.65) 100%);
@@ -78,7 +72,15 @@ ul#menu li a:hover, ul#menu li ul li a  {
 	background:-webkit-linear-gradient(top, rgba(255,255,255,0.50) 0%, rgba(255,255,255,0.75) 100%);
 }
 ul#menu li ul li {
-	background:rgb(225,225,225);
+	background:rgba(225,225,225,0.95);
+}
+td.title, td.footer, td.listtitle, .blue_gradient {
+	background:rgba(0,0,0,0.50);
+	background:linear-gradient(top, rgba(0,0,0,0.75) 49%, rgba(0,0,0,0.80) 50%, rgba(0,0,0,0.70) 100%);
+	background:-o-linear-gradient(top, rgba(0,0,0,0.75) 49%, rgba(0,0,0,0.80) 50%, rgba(0,0,0,0.70) 100%);
+	background:-ms-linear-gradient(top, rgba(0,0,0,0.75) 49%, rgba(0,0,0,0.80) 50%, rgba(0,0,0,0.70) 100%);
+	background:-moz-linear-gradient(top, rgba(0,0,0,0.75) 49%, rgba(0,0,0,0.80) 50%, rgba(0,0,0,0.70) 100%);
+	background:-webkit-linear-gradient(top, rgba(0,0,0,0.75) 49%, rgba(0,0,0,0.80) 50%, rgba(0,0,0,0.70) 100%);
 }
 td.header, td.content, td.stats {
 	background:rgba(255,255,255,0.75);

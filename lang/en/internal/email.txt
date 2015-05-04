@@ -199,3 +199,5 @@
 199=PHP Script Name
 200=mail() Line Number
 201=Send Count
+202=Block Usage
+203=Apparent Size

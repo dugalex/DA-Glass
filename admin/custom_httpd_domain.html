@@ -1,5 +1,5 @@
 |LF_STANDARD|
-|?TREE=<span class="tree">&raquo;</span> <a class=tree href="/CMD_CUSTOM_HTTPD">`LANG_CUST_HTTPD_CONF`</a> <span class="tree">&raquo;</span> <a class=tree href="/CMD_CUSTOM_HTTPD?domain=`domain`">`domain`|
+|?TREE=&raquo; <a class=tree href="/CMD_CUSTOM_HTTPD">`LANG_CUST_HTTPD_CONF`</a> &raquo; <a class=tree href="/CMD_CUSTOM_HTTPD?domain=`domain`">`domain`|
 |?HELP_SECTION=`ADMIN_HELPER`|
 
 |HTM_HEADER|
@@ -147,14 +147,14 @@ trigger_toggle();
 				</td>
 			</tr>
 
-			<tr |*if VH5_NAME=""|style="display: none;"|*endif|><td class=list colspan=2><span class=expand_toggle_plus id=vh5_toggle onclick="toggle_expand('vh5_toggle', 'vh5_visibility');">+</span> |VH5_NAME| |*if VH5_CUSTOM="1"|<a href="CMD_TEMPLATE_DIFF?name=|VH2_NAME_SHORT|">|LANG_CUSTOM_TEMPLATE|</a>|*endif|</td></tr>
+			<tr |*if VH5_NAME=""|style="display: none;"|*endif|><td class=list colspan=2><span class=expand_toggle_plus id=vh5_toggle onclick="toggle_expand('vh5_toggle', 'vh5_visibility');">+</span> |VH5_NAME| |*if VH5_CUSTOM="1"|<a href="CMD_TEMPLATE_DIFF?name=|VH5_NAME_SHORT|">|LANG_CUSTOM_TEMPLATE|</a>|*endif|</td></tr>
 			<tr id=vh5_visibility style="display: none;">
 				<td class=list>
 					<textarea class="code_edit" cols=|VH_COLS| rows=40 wrap=off readonly>|VH5|</textarea>
 				</td>
 			</tr>
 
-			<tr |*if VH6_NAME=""|style="display: none;"|*endif|><td class=list2 colspan=2><span class=expand_toggle_plus id=vh6_toggle onclick="toggle_expand('vh6_toggle', 'vh6_visibility');">+</span> |VH6_NAME| |*if VH6_CUSTOM="1"|<a href="CMD_TEMPLATE_DIFF?name=|VH2_NAME_SHORT|">|LANG_CUSTOM_TEMPLATE|</a>|*endif|</td></tr>
+			<tr |*if VH6_NAME=""|style="display: none;"|*endif|><td class=list2 colspan=2><span class=expand_toggle_plus id=vh6_toggle onclick="toggle_expand('vh6_toggle', 'vh6_visibility');">+</span> |VH6_NAME| |*if VH6_CUSTOM="1"|<a href="CMD_TEMPLATE_DIFF?name=|VH6_NAME_SHORT|">|LANG_CUSTOM_TEMPLATE|</a>|*endif|</td></tr>
 			<tr id=vh6_visibility style="display: none;">
 				<td class=list2>
 					<textarea class="code_edit" cols=|VH_COLS| rows=40 wrap=off readonly>|VH6|</textarea>

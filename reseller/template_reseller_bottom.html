@@ -30,7 +30,7 @@
 |$/usr/local/bin/php
 <?php
 
-show_bar('<tr><td class="stats_left"><a href="javascript:onClick(document.updateform.submit());" title="|LANG_CLICK_TO_UPDATE|">|LANG_DISK_SPACE| |LANG_MB|</a></td><td class="stats_right"><a href="javascript:onClick(document.updateform.submit());" title="|LANG_CLICK_TO_UPDATE|">|RESELLERQUOTA|</a>/|RESELLERQUOTAMAX|</td></tr><tr><td style="width:100%" colspan="2">', '|RESELLERQUOTA|', '|RESELLERQUOTAMAX|', 'quota_bar', '</td></tr>');
+show_bar('<tr><td class="stats_left"><a href="javascript:onClick(document.updateform.submit());" title="|LANG_CLICK_TO_UPDATE|">|LANG_DISK_SPACE| |LANG_MB|</a></td><td class="stats_right"><a href="javascript:onClick(document.updateform.submit());" title="|LANG_CLICK_TO_UPDATE|">|RESELLERQUOTA|</a>/|RESELLERQUOTAMAX|</td></tr><tr><td colspan="2">', '|RESELLERQUOTA|', '|RESELLERQUOTAMAX|', 'quota_bar', '</td></tr>');
 show_bar('<tr><td class="stats_left">|LANG_BANDWIDTH| |LANG_GB|</td><td class="stats_right">|RESELLERBANDWIDTHGIG|/|RESELLERBANDWIDTHMAXGIG|</td></tr><tr><td colspan="2">', '|RESELLERBANDWIDTH|', '|RESELLERBANDWIDTHMAX|', 'bandwidth_bar', '</td></tr>');
 
 function show_bar($text, $used, $limit, $id)
@@ -137,7 +137,7 @@ DONE|
 								<td class="stats_right">|ADMINQUOTA|</td>
 							</tr>
 							<tr>
-								<td colspan=2>
+								<td colspan="2">
 									<table class="bar" cellspacing="1" cellpadding="0">
 										<tr>
 											<td>
@@ -156,7 +156,7 @@ DONE|
 								<td class="stats_right">|ADMINBANDWIDTHGIG|</td>
 							</tr>
 							<tr>
-								<td colspan=2>
+								<td colspan="2">
 									<table class="bar" cellspacing="1" cellpadding="0">
 										<tr>
 											<td>
