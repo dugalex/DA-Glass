@@ -6,7 +6,7 @@
 	background-size:cover;
 	color:rgb(125,125,125);
 }
-a, a:visited, a:active, a.msg, ul#menu li a, ul#menu li ul li a, input:hover, textarea:hover, select:hover, welcome, title, a.title, td.title, td.listtitle, a.listtitle, .blue_gradient, .toptext, tree, a.tabtext {
+a, a:visited, a:active, a.msg, ul#menu li a, ul#menu li ul li a, input:hover, textarea:hover, select:hover, welcome, title, a.title, td.title, td.listtitle, a.listtitle, .blue_gradient, .toptext, tree, a.tabtext, .message_info {
 	text-decoration:none;
 	color:rgb(150,150,150)
 }
@@ -89,7 +89,7 @@ td.title, td.footer, td.listtitle, .blue_gradient {
 	background:-moz-linear-gradient(top, rgba(0,0,0,0.40) 49%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0.35) 100%);
 	background:-webkit-linear-gradient(top, rgba(0,0,0,0.40) 49%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0.35) 100%);
 }
-td.header, td.content, td.stats {
+td.header, td.content, td.stats, td.usage {
 	background:rgba(0,0,0,0.15);
 	background:linear-gradient(top, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.25) 100%);
 	background:-o-linear-gradient(top, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.25) 100%);
