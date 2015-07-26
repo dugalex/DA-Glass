@@ -22,7 +22,7 @@ a, a:visited, a:active, input, textarea, select, tree  {
 	text-decoration:none;
 	color:rgba(0,0,0,0.75);
 }
-span.tree, a.tree, .title, a.title, .listtitle, a.listtitle, td.footer, td.footer a, .blue_gradient, a.tabtext, .white {
+.title, a.title, .listtitle, a.listtitle, td.footer, td.footer a, .blue_gradient, a.tabtext, .white {
 	font-family:'OpenSans-Bold', sans-serif;
 	text-decoration:none;
 	color:rgba(255,255,255,0.85);
@@ -51,7 +51,7 @@ td.title input, td.title select, td.listtitle input, td.listtitle select, td.foo
 	color:rgba(255,255,255,0.75);
 }
 td.title input:hover, td.title select:hover, td.listtitle input:hover, td.listtitle select:hover, td.footer input:hover, td.footer select:hover, .blue_gradient input:hover, .blue_gradient select:hover {
-	color:rgba(0,0,0,0.85);
+	color:rgba(255,255,255,0.50);
 }
 .welcome {
 	width:550px;

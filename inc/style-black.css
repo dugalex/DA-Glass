@@ -4,13 +4,13 @@
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;
-	color:rgb(125,125,125);
+	color:rgb(150,150,150);
 }
-a, a:visited, a:active, a.msg, ul#menu li a, ul#menu li ul li a, input:hover, textarea:hover, select:hover, welcome, title, a.title, td.title, td.listtitle, a.listtitle, .blue_gradient, .toptext, tree, a.tabtext, .message_info {
+a, a:visited, a:active, a.msg, ul#menu li a, ul#menu li ul li a, input:hover, textarea:hover, select:hover, welcome, title, a.title, td.title, td.listtitle, a.listtitle, .blue_gradient, .toptext, tree, a.tabtext, .message_info, td.footer, td.footer a {
 	text-decoration:none;
 	color:rgb(150,150,150)
 }
-a:hover, a.tree:hover, a.title:hover, a.listtitle:hover, td.footer a:hover, a.tabtext:hover, ul#menu li a:hover, ul#menu li ul li a:hover, input[type=button]:hover, input[type=submit]:hover, input[type=checkbox]:hover {
+a:hover, a.title:hover, a.listtitle:hover, td.footer a:hover, a.tabtext:hover, ul#menu li a:hover, ul#menu li ul li a:hover, input[type=button]:hover, input[type=submit]:hover, input[type=checkbox]:hover {
 	color:rgb(50,125,200);
 }
 input, textarea, select {
@@ -36,6 +36,20 @@ input[type=button]:hover, input[type=submit]:hover {
 	background:-ms-linear-gradient(top, rgba(0,0,0,0.01) 49%, rgba(0,0,0,0.11) 50%, rgba(0,0,0,0.06) 100%);
 	background:-moz-linear-gradient(top, rgba(0,0,0,0.01) 49%, rgba(0,0,0,0.11) 50%, rgba(0,0,0,0.06) 100%);
 	background:-webkit-linear-gradient(top, rgba(0,0,0,0.01) 49%, rgba(0,0,0,0.11) 50%, rgba(0,0,0,0.06) 100%);
+}
+td.listtitle input[type=button]:hover, td.listtitle input[type=submit]:hover {
+	background:linear-gradient(top, rgba(255,255,255,0.15) 49%, rgba(255,255,255,0.10) 50%, rgba(255,255,255,0.05) 100%);
+	background:-o-linear-gradient(top, rgba(255,255,255,0.15) 49%, rgba(255,255,255,0.10) 50%, rgba(255,255,255,0.05) 100%);
+	background:-ms-linear-gradient(top, rgba(255,255,255,0.15) 49%, rgba(255,255,255,0.10) 50%, rgba(255,255,255,0.05) 100%);
+	background:-moz-linear-gradient(top, rgba(255,255,255,0.15) 49%, rgba(255,255,255,0.10) 50%, rgba(255,255,255,0.05) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,255,255,0.15) 49%, rgba(255,255,255,0.10) 50%, rgba(255,255,255,0.05) 100%);
+}
+td.listtitle input[type=button], td.listtitle input[type=submit] {
+	background:linear-gradient(top, rgba(255,255,255,0.10) 49%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0.00) 100%);
+	background:-o-linear-gradient(top, rgba(255,255,255,0.10) 49%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0.00) 100%);
+	background:-ms-linear-gradient(top, rgba(255,255,255,0.10) 49%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0.00) 100%);
+	background:-moz-linear-gradient(top, rgba(255,255,255,0.10) 49%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0.00) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,255,255,0.10) 49%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0.00) 100%);
 }
 ul#menu li a, ul#menu li ul li a:hover {
 	border-left:1px solid rgba(0,0,0,1);
