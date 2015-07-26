@@ -7,7 +7,15 @@
 
 |REPLYBUTTON|
 
+|$/usr/local/bin/php
+<?php
+$data = <<<END
 |TICKETMESSAGES|
+END;
+$data = str_replace("cellspacing=0", "cellspacing=1", $data);
+echo  $data;
+?>
+DONE|
 
 |*if type="message"|
 <form name=tableform2 action='/CMD_TICKET' method='POST'>
