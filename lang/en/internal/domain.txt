@@ -34,3 +34,5 @@
 34=First PHP
 35=Second PHP
 36=The subdomain '%s' already exists under the %s domain.
+37=Enabled
+38=Disabled

@@ -6,7 +6,7 @@
 	background-size:cover;
 	color:rgb(150,150,150);
 }
-a, a:visited, a:active, a.msg, ul#menu li a, ul#menu li ul li a, input:hover, textarea:hover, select:hover, welcome, title, a.title, td.title, td.listtitle, a.listtitle, .blue_gradient, .toptext, tree, a.tabtext, .message_info, td.footer, td.footer a {
+a, a:visited, a:active, a.msg, ul#menu li a, ul#menu li ul li a, input:hover, textarea:hover, select:hover, welcome, title, a.title, td.title, td.listtitle, a.listtitle, .blue_gradient, .toptext, .tree, a.tree, a.tabtext, .message_info, td.footer, td.footer a {
 	text-decoration:none;
 	color:rgb(150,150,150)
 }

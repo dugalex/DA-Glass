@@ -61,3 +61,4 @@
 61=Log
 62=View
 63=Tail
+64=UTF-8

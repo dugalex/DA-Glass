@@ -18,11 +18,11 @@ body {
 	font-size:13px;
 	margin-top:15px;
 }
-a, a:visited, a:active, input, textarea, select, tree  {
+a, a:visited, a:active, input, textarea, select  {
 	text-decoration:none;
 	color:rgba(0,0,0,0.75);
 }
-.title, a.title, .listtitle, a.listtitle, td.footer, td.footer a, .blue_gradient, a.tabtext, .white {
+.title, a.title, .listtitle, a.listtitle, td.footer, td.footer a, .blue_gradient, a.tabtext, .white, .tree, a.tree {
 	font-family:'OpenSans-Bold', sans-serif;
 	text-decoration:none;
 	color:rgba(255,255,255,0.85);

@@ -201,3 +201,10 @@
 201=Send Count
 202=Block Usage
 203=Apparent Size
+204=Selected character-set encoding is not valid.
+205=Selected Content-Type is not valid.
+206=Autoreply
+207=Subject prefix contains invalid characters. Use %s
+208=%s is not a valid exim date.
+209=minutes
+210=hours
