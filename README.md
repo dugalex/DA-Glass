@@ -6,7 +6,6 @@ All colors on the top left are available for use. To change a color click on the
 ![Skin](https://github.com/dugalex/DA-Glass/blob/master/inc/skin.jpg)
 
 
---------------------------------------------------------------------
 !!! Installation !!!
 --------------------------------------------------------------------
 
