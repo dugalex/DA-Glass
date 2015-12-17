@@ -12,7 +12,7 @@ All colors on the top left are available for use. To change a color click on the
 cd /usr/local/directadmin/data/skins/  
 wget https://github.com/dugalex/DA-Glass/archive/master.zip  
 unzip master.zip  
-mv DA-Enhanced-Pro-master da-glass  
+mv DA-Glass-master da-glass  
 chown -R diradmin:diradmin da-glass  
 rm -f master.zip  
 exit  
