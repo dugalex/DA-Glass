@@ -37,7 +37,17 @@ function selectAllDNS()
 <td class=listtitle>|LANG_VALUE|</td >
 <td class=listtitle align=center ><a class=listtitle href="javascript:selectAllDNS();">|LANG_SELECT|</a></td >
 </tr>
+
+|$/usr/local/bin/php
+<?php
+$data = <<<END
 |DNS_ROWS|
+END;
+$data = str_replace("FONT-SIZE: 8.5pt; FONT-FAMILY: courier new;", "font-size:7px", $data);
+echo  $data;
+?>
+DONE|
+
 <tr><td class=listtitle align=right colspan=4>
 <table cellpadding=0 cellspacing=0 width=100%><tr>
 <td><input type=submit value='|LANG_RESET_DEFAULTS|' name=reset onClick="return confirm('|LANG_RESET_WARNING|');"></td>
