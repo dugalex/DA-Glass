@@ -8,11 +8,11 @@ All colors on the top left are available for use. To change a color click on the
 
 # Installation
 ```
-cd /usr/local/directadmin/data/skins/ 
-wget https://github.com/dugalex/DA-Glass/archive/master.zip 
+cd /usr/local/directadmin/data/skins/
+wget https://github.com/dugalex/DA-Glass/archive/master.zip
 unzip master.zip
-mv DA-Glass-master da-glass 
-chown -R diradmin:diradmin da-glass 
+mv DA-Glass-master da-glass
+chown -R diradmin:diradmin da-glass
 rm -f master.zip
 exit
 ```
