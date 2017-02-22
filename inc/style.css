@@ -464,11 +464,11 @@ td.redlist, td.redlistwrap, td.redlist2, td.redlistwrap2 {
 	color:green;
 }
 .highlighted-bad {
-	color: red;
-	font-weight: bold;
+	color:red;
+	font-weight:bold;
 }
 .highlighted-neutral {
-	color: #DBA24D;
+	color:#DBA24D;
 }
 #livesearch {
 	text-align:left;
@@ -650,18 +650,45 @@ td.message_info {
 	color:rgba(0,0,0,0.75);
 }
 .good_twostep_auth_code, .bad_twostep_auth_code {
-	display: inline-block;
-	text-align: center;
-
-	background-repeat: no-repeat;
-	background-position: bottom;
-
-	min-width: 50px;
-	padding-bottom: 50px;
+	display:inline-block;
+	text-align:center;
+	background-repeat:no-repeat;
+	background-position:bottom;
+	min-width:50px;
+	padding-bottom:50px;
 }
 .good_twostep_auth_code {
-	background-image: url(IMG_CHECKBOX);
+	background-image:url(IMG_CHECKBOX);
 }
 .bad_twostep_auth_code {
-	background-image: url(IMG_INCORRECT);
+	background-image:url(IMG_INCORRECT);
+}
+.edit_cog {
+	background: url("IMG_EDIT_COG") 0px 1px no-repeat;
+	width: 25px;
+	float: right;
+	min-height: 1px;
+	user-select: none;
+}
+.edit_cog:hover {
+	-webkit-filter: brightness(70%);
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.pencil {
+	background: url("IMG_PENCIL") 0px 1px no-repeat;
+	width: 20px;
+	float: right;
+	min-height: 1px;
+	user-select: none;
+	cursor: default;
+}
+.show_logo {
+	display:inline-block;
+	box-shadow: 1px 1px 3px #727272;
+	margin: 5px;
 }

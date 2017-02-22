@@ -1,0 +1,187 @@
+|$/usr/local/bin/php
+
+<?php
+
+switch(PHP_OS) {
+	case "Linux":
+		$sysReShow = (false !== ($sysInfo = sys_linux()))?"show":"none";
+		break;
+	default:
+		break;
+}
+
+function sys_linux() {
+
+	if (false === ($str = @file("/proc/uptime"))) return false;
+	$str = explode(" ", implode("", $str));
+	$str = trim($str[0]);
+	$min = $str / 60;
+	$hours = $min / 60;
+	$days = floor($hours / 24);
+	$hours = floor($hours - ($days * 24));
+	$min = floor($min - ($days * 60 * 24) - ($hours * 60));
+	if ($days !== 0) $res['uptime'] = $days." |LANG_DAYS|, ";
+	if ($hours !== 0) $res['uptime'] .= $hours." |LANG_HOURS| & ";
+	$res['uptime'] .= $min." |LANG_MINUTES|";
+
+	if (false === ($str = @file("/proc/meminfo"))) return false;
+	$str = implode("", $str);
+	preg_match_all("/MemTotal\s{0,}\:+\s{0,}([\d\.]+).+?MemFree\s{0,}\:+\s{0,}([\d\.]+).+?Cached\s{0,}\:+\s{0,}([\d\.]+).+?SwapTotal\s{0,}\:+\s{0,}([\d\.]+).+?SwapFree\s{0,}\:+\s{0,}([\d\.]+)/s", $str, $buf);
+
+	$res['memTotal'] = round($buf[1][0]/1024, 2);
+	$res['memFree'] = round($buf[2][0]/1024, 2);
+	$res['memCached'] = round($buf[3][0]/1024, 2);
+	$res['memUsed'] = ($res['memTotal']-$res['memFree']);
+	$res['memPercent'] = (floatval($res['memTotal'])!=0)?round($res['memUsed']/$res['memTotal']*100,2):0;
+
+	$res['memRealUsed'] = ($res['memTotal'] - $res['memFree'] - $res['memCached']);
+	$res['memRealPercent'] = (floatval($res['memTotal'])!=0)?round($res['memRealUsed']/$res['memTotal']*100,2):0;
+	
+	$res['memCachedUsed'] = ($res['memUsed']-$res['memRealUsed']);
+	$res['memCachedPercent'] = (floatval($res['memTotal'])!=0)?round($res['memCachedUsed']/$res['memTotal']*100,2):0;
+
+	$res['swapTotal'] = round($buf[4][0]/1024, 2);
+	$res['swapFree'] = round($buf[5][0]/1024, 2);
+	$res['swapUsed'] = ($res['swapTotal']-$res['swapFree']);
+	$res['swapPercent'] = (floatval($res['swapTotal'])!=0)?round($res['swapUsed']/$res['swapTotal']*100,2):0;
+
+	if (false === ($str = @file("/proc/loadavg"))) return false;
+	$str = explode(" ", implode("", $str));
+	$str = array_chunk($str, 3);
+	$res['loadAvg'] = implode(" ", $str[0]);
+
+	return $res;
+	
+}
+
+$load_avg = sys_getloadavg();
+$core_nums = file_get_contents("grep -P '^processor' /proc/cpuinfo|wc -l");
+$load = round($load_avg[0]/($core_nums + 1)*25, 2);
+
+if($load >= 75) {
+	$bgcolor = "barbg_red";
+} else if($load >= 50) {
+	$bgcolor = "barbg_orange";
+} else if($load >= 25) {
+	$bgcolor = "barbg_yellow";
+} else {
+	$bgcolor = "barbg_green";
+}
+
+if($sysInfo['memRealPercent'] >= 90) {
+	$ramcolor = "barbg_red";
+} else if($sysInfo['memRealPercent'] >= 70) {
+	$ramcolor = "barbg_orange";
+} else if($sysInfo['memRealPercent'] >= 50) {
+	$ramcolor = "barbg_yellow";
+} else {
+	$ramcolor = "barbg_green";
+}
+
+?>
+
+			<table class="table" cellspacing="1">
+				<tr>
+					<td class="title"><div class="icon"><img src="/IMG_ICON_SERVICE_MONITOR"/></div>|LANG_SERVER_STATS|<span class="stats_right" style="float:right">Uptime: <?php echo $sysInfo['uptime']; ?></span></td>
+				</tr>
+				<tr>
+					<td class="usage">
+						<table cellspacing="5" cellpadding="0">
+							<tr>
+								<td class="bar" style="width:327px">
+									<table class="barbg">
+										<tr>
+											<td class="stats_left">|LANG_SERVER_LOAD|</td>
+											<td class="stats_right"><?php echo $sysInfo['loadAvg'];?></td>
+										</tr>
+										<tr>
+											<td colspan="2" class="barbg" style="height:8px">
+												<table width="<?php echo $load;?>%">
+													<tr>
+														<td class="<?php echo $bgcolor;?>"></td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="bar" style="width:327px">
+									<table class="barbg">
+										<tr>
+											<td class="stats_left">|LANG_SERVER_RAM|</td>
+											<td class="stats_right"><?php echo $sysInfo['memUsed'];?>MB</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="barbg" style="height:8px">
+												<table width="<?php echo $sysInfo['memPercent'];?>%">
+													<tr>
+														<td class="<?php echo $ramcolor;?>"></td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						<table cellspacing="5" cellpadding="0">
+							<tr>
+								<td class="bar" style="width:217px">
+									<table class="barbg">
+										<tr>
+											<td class="stats_left">|LANG_SERVER_CACHED_RAM|</td>
+											<td class="stats_right"><?php echo $sysInfo['memCached'];?>MB</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="barbg" style="height:8px">
+												<table width="<?php echo $sysInfo['memCachedPercent'];?>%">
+													<tr>
+														<td class="barbg_green"></td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="bar" style="width:217px">
+									<table class="barbg">
+										<tr>
+											<td class="stats_left">|LANG_SERVER_REAL_RAM|</td>
+											<td class="stats_right"><?php echo $sysInfo['memRealUsed'];?>MB</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="barbg" style="height:8px">
+												<table width="<?php echo $sysInfo['memRealPercent'];?>%">
+													<tr>
+														<td class="<?php echo $ramcolor;?>"></td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="bar" style="width:217px">
+									<table class="barbg">
+										<tr>
+											<td class="stats_left">|LANG_SERVER_SWAP_RAM|</td>
+											<td class="stats_right"><?php echo $sysInfo['swapUsed'];?>MB</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="barbg" style="height:8px">
+												<table width="<?php echo $sysInfo['swapPercent'];?>%">
+													<tr>
+														<td class="barbg_green"></td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br/>
+
+DONE|
