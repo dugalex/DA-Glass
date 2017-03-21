@@ -7,7 +7,7 @@ All colors on the top left are available for use. To change a color click on the
 
 
 # NOTE
-If you are using DirectAdmin over SSL you will have to add the option below to your "directadmin.conf" file for the skin to work properly.
+If you are using DirectAdmin over SSL you will have to add the option below to your "directadmin.conf" file for the skin to function properly.
 ```
 ssl_ignore_when_local=1
 ```
