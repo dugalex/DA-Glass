@@ -3,16 +3,10 @@ DA-Glass - Free DirectAdmin Skin by dugalex
 
 All colors on the top left are available for use. To change a color click on the desired color box. 
 
-![Skin](https://github.com/dugalex/DA-Glass/blob/master/inc/skin.jpg)
+![Skin](https://github.com/dugalex/DA-Glass/blob/master/inc/images/skin.jpg)
 
-<<<<<<< HEAD
 # Note
 If using DirectAdmin over SSL you will have to add the option below to your directadmin.conf file for the skin to function properly.
-=======
-
-# NOTE
-If you are using DirectAdmin over SSL you will have to add the option below to your "directadmin.conf" file for the skin to function properly.
->>>>>>> origin/master
 ```
 ssl_ignore_when_local=1
 ```
