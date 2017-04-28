@@ -79,7 +79,7 @@ if (document.searchform)
 			<br/>
 			<table class="table" cellspacing="1">
 				<tr>
-					<td class="title"><div class="icon"><img src="/IMG_ICON_ADMIN"/></div>|LANG_TITLE_ACCOUNT|</td>
+					<td class="title"><div class="icon account_management"></div>|LANG_TITLE_ACCOUNT|</td>
 				</tr>
 				<tr>
 					<td class="content">
@@ -91,9 +91,10 @@ if (document.searchform)
 								<a class="list_resellers" href="/CMD_RESELLER_SHOW">|LANG_LIST_RESELLERS|</a>
 								<a class="manage_packages" href="/CMD_MANAGE_RESELLER_PACKAGES">|LANG_RESELLER_PACKAGES|</a>
 								<a class="list_users" href="/CMD_ALL_USER_SHOW">|LANG_SHOW_ALL_USERS|</a>
-								<a class="support_center" href="/CMD_TICKET_MANAGE">|LANG_MANAGE_TICKETS| |*if NEWTICKETS!="0"|<span class=count_notice>|NEWTICKETS|</span>|*endif|</a>
 								<a class="change_password" href="/HTM_USER_PASSWD">|LANG_CHANGE_PASS|</a>
+								<a class="forwarders" href="/CMD_TICKET_CREATE?TYPE=Message&amp;who=all">|LANG_MESSSAGE_ALL_USERS|</a>
 								<a class="change_password" href="/HTM_PASSWD">|LANG_PASSWORD|</a>
+								<a class="support_center" href="/CMD_TICKET_MANAGE">|LANG_MANAGE_TICKETS| |*if NEWTICKETS!="0"| (<b class="warning">|NEWTICKETS|</b> |LANG_NEW|) |*endif|</a>
 							</li>
 						</ul>
 					</td>
@@ -102,23 +103,22 @@ if (document.searchform)
 			<br/>
 			<table class="table" cellspacing="1">
 				<tr>
-					<td class="title"><div class="icon"><img src="/IMG_ICON_SERVER"/></div>|LANG_TITLE_SERVER|</td>
+					<td class="title"><div class="icon server_management"></div>|LANG_TITLE_SERVER|</td>
 				</tr>
 				<tr>
 					<td class="content">
 						<ul id="content">
 							<li>
 								<a class="ip_management" href="/CMD_IP_MANAGER">|LANG_IP_MANAGEMENT|</a>
-								<a class="nameservers" href="/CMD_NAME_SERVER">|LANG_NAMESERVERS|</a>
-								<a class="dns_management" href="/CMD_DNS_ADMIN">|LANG_DNS_ADMIN|</a>
 								<a class="create_backup" href="/CMD_ADMIN_BACKUP">|LANG_ADMIN_BACKUPS|</a>
-								<a class="multi_server_setup" href="/CMD_MULTI_SERVER">|LANG_MULTI_SERVER|</a>
+								<a class="dns_management" href="/CMD_DNS_ADMIN">|LANG_DNS_ADMIN|</a>
 								<a class="mailing_lists" href="/CMD_MAIL_QUEUE?sort1=2">|LANG_MAIL_Q_ADMIN|</a>
+								<a class="multi_server_setup" href="/CMD_MULTI_SERVER">|LANG_MULTI_SERVER|</a>
 								<a class="move_users" href="/CMD_MOVE_USERS">|LANG_MOVE_USERS|</a>
-								<a class="server_information" href="/CMD_SYSTEM_INFO">|LANG_SYSTEM_INFO|</a>
-								<a class="service_monitor" href="/CMD_SHOW_SERVICES">|LANG_SERVICE_MONITOR|</a>
-								|?PMSORT=-9||*if OS_TYPE="FreeBSD"||?PMSORT=-10||*endif|
 								<a class="process_monitor" href="/CMD_PROCESS_MONITOR?sort1=|PMSORT|">|LANG_PROCESS_MONITOR|</a>
+								|?PMSORT=-9||*if OS_TYPE="FreeBSD"||?PMSORT=-10||*endif|
+								<a class="service_monitor" href="/CMD_SHOW_SERVICES">|LANG_SERVICE_MONITOR|</a>
+								<a class="server_information" href="/CMD_SYSTEM_INFO">|LANG_SYSTEM_INFO|</a>
 								<a class="system_backup" href="/CMD_SYSTEM_BACKUP">|LANG_SYS_BACKUP|</a>
 								<a class="log_viewer" href="/CMD_LOG_VIEWER">|LANG_LOG_VIEWER|</a>
 								<a class="file_editor" href="/CMD_ADMIN_FILE_EDITOR">|LANG_FILE_EDITOR|</a>
@@ -130,7 +130,7 @@ if (document.searchform)
 			<br/>
 			<table class="table" cellspacing="1">
 				<tr>
-					<td class="title"><div class="icon"><img src="/IMG_ICON_EXTRA"/></div>|LANG_TITLE_EXTRA|</td>
+					<td class="title"><div class="icon extra_features"></div>|LANG_TITLE_EXTRA|</td>
 				</tr>
 				<tr>
 					<td class="content">
@@ -141,25 +141,23 @@ if (document.searchform)
 								<a class="perl_modules" href="/CMD_PHP_SAFE_MODE">|LANG_PHP_SAFEMODE|</a>
 								<a class="brute_force_monitor" href="/CMD_BRUTE_FORCE_MONITOR?sort1=-1&seek_value=-500000">|LANG_BRUTE_FORCE_MONITOR|</a>
 								<a class="administrator_settings" href="/CMD_ADMIN_SETTINGS">|LANG_ADMIN_SETTINGS|</a>
-								<a class="licensing" href="/CMD_LICENSE">|LANG_LICENSE_UPDATES|</a>
-								<a class="plugin_manager" href="/CMD_PLUGIN_MANAGER">|LANG_PLUGIN_MANAGER|</a>
-								<a class="cronjobs" href="/CMD_ADMIN_CRON_JOBS">|LANG_ADMIN_CRON_JOBS|</a>
+								<a class="licensing" href="/CMD_LICENSE">|LANG_LICENSE_UPDATES|<span id=program_updates class=count_notice style='visibility: hidden;'></span></a>
+								<a class="plugin_manager" href="/CMD_PLUGIN_MANAGER">|LANG_PLUGIN_MANAGER|<span id=plugin_updates class=count_notice style='visibility: hidden;'></span></a>
 								<a class="skin_manager" href="/CMD_SKINS">|LANG_SKIN_MANAGER|</a>
-
-<span class="plugins">
+								<a class="cronjobs" href="/CMD_ADMIN_CRON_JOBS">|LANG_ADMIN_CRON_JOBS|</a>
 
 |$/usr/local/bin/php
 <?php
 $data = <<<END
-|PLUGIN_0_ADMIN_TXT|
+<span class="plugin">|PLUGIN_0_ADMIN_TXT|</span>
 END;
 if (strlen($data) > 1)
 {
 echo <<<END
-|PLUGIN_0_ADMIN_TXT|
-|PLUGIN_1_ADMIN_TXT|
-|PLUGIN_2_ADMIN_TXT|
-|PLUGIN_3_ADMIN_TXT|
+<span class="plugin">|PLUGIN_0_ADMIN_TXT|</span>
+<span class="plugin">|PLUGIN_1_ADMIN_TXT|</span>
+<span class="plugin">|PLUGIN_2_ADMIN_TXT|</span>
+<span class="plugin">|PLUGIN_3_ADMIN_TXT|</span>
 END;
 }
 ?>
@@ -167,21 +165,19 @@ DONE|
 |$/usr/local/bin/php
 <?php
 $data = <<<END
-|PLUGIN_1_ADMIN_TXT|
+<span class="plugin">|PLUGIN_1_ADMIN_TXT|</span>
 END;
 if (strlen($data) > 1)
 {
 echo <<<END
-|PLUGIN_4_ADMIN_TXT|
-|PLUGIN_5_ADMIN_TXT|
-|PLUGIN_6_ADMIN_TXT|
-|PLUGIN_7_ADMIN_TXT|
+<span class="plugin">|PLUGIN_4_ADMIN_TXT|</span>
+<span class="plugin">|PLUGIN_5_ADMIN_TXT|</span>
+<span class="plugin">|PLUGIN_6_ADMIN_TXT|</span>
+<span class="plugin">|PLUGIN_7_ADMIN_TXT|</span>
 END;
 }
 ?>
 DONE|
-
-</span>
 
 							</li>
 						</ul>

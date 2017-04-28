@@ -82,7 +82,7 @@ function showUserMessage()
 			<br/>
 			<table class="table" cellspacing="1">
 				<tr>
-					<td class="title"><div class="icon"><img src="/IMG_ICON_RESELLER"/></div>|LANG_TITLE_ACCOUNT|</td>
+					<td class="title"><div class="icon reseller"></div>|LANG_TITLE_ACCOUNT|</td>
 				</tr>
 				<tr>
 					<td class="content">
@@ -93,7 +93,7 @@ function showUserMessage()
 								<a class="add_package" href="/CMD_SHOW_USER_PACKAGE">|LANG_ADD_PACKAGE|</a>
 								<a class="manage_packages" href="/CMD_MANAGE_USER_PACKAGES">|LANG_LIST_PACKAGES|</a>
 								<a class="email_accounts" href="javascript:showUserMessage();">|LANG_EDIT_USER_MESS|</a>
-								<a class="support_center" href="CMD_TICKET_MANAGE">|LANG_MANAGE_TICKETS| |*if NEWTICKETS!="0"|<span class=count_notice>|NEWTICKETS|</span>|*endif|</a>
+								<a class="support_center" href="CMD_TICKET_MANAGE">|LANG_MANAGE_TICKETS| |*if NEWTICKETS!="0"| (<b class="warning">|NEWTICKETS|</b> |LANG_NEW|) |*endif|</a>
 							</li>
 						</ul>
 					</td>
@@ -102,7 +102,7 @@ function showUserMessage()
 			<br/>
 			<table class="table" cellspacing="1">
 				<tr>
-					<td class="title"><div class="icon"><img src="/IMG_ICON_RESELLER_TOOLS"/></div>|LANG_TITLE_RESELLER|</td>
+					<td class="title"><div class="icon reseller_tools"></div>|LANG_TITLE_RESELLER|</td>
 				</tr>
 				<tr>
 					<td class="content">
@@ -122,7 +122,7 @@ function showUserMessage()
 			<br/>
 			<table class="table" cellspacing="1">
 				<tr>
-					<td class="title"><div class="icon"><img src="/IMG_ICON_EXTRA"/></div>|LANG_TITLE_EXTRA|</td>
+					<td class="title"><div class="icon extra_features"></div>|LANG_TITLE_EXTRA|</td>
 				</tr>
 				<tr>
 					<td class="content">
@@ -132,20 +132,18 @@ function showUserMessage()
 								<a class="contact_administrator" href="/CMD_TICKET_CREATE?TYPE=Ticket">|LANG_CONTACT_ADMIN|</a>
 								<a class="server_information" href="/CMD_SYSTEM_INFO">|LANG_SYSTEM_INFO|</a>
 
-<span class="plugins">
-
 |$/usr/local/bin/php
 <?php
 $data = <<<END
-|PLUGIN_0_RESELLER_TXT|
+<span class="plugin">|PLUGIN_0_RESELLER_TXT|</span>
 END;
 if (strlen($data) > 1)
 {
 echo <<<END
-|PLUGIN_0_RESELLER_TXT|
-|PLUGIN_1_RESELLER_TXT|
-|PLUGIN_2_RESELLER_TXT|
-|PLUGIN_3_RESELLER_TXT|
+<span class="plugin">|PLUGIN_0_RESELLER_TXT|</span>
+<span class="plugin">|PLUGIN_1_RESELLER_TXT|</span>
+<span class="plugin">|PLUGIN_2_RESELLER_TXT|</span>
+<span class="plugin">|PLUGIN_3_RESELLER_TXT|</span>
 END;
 }
 ?>
@@ -153,21 +151,19 @@ DONE|
 |$/usr/local/bin/php
 <?php
 $data = <<<END
-|PLUGIN_2_RESELLER_TXT|
+<span class="plugin">|PLUGIN_2_RESELLER_TXT|</span>
 END;
 if (strlen($data) > 1)
 {
 echo <<<END
-|PLUGIN_4_RESELLER_TXT|
-|PLUGIN_5_RESELLER_TXT|
-|PLUGIN_6_RESELLER_TXT|
-|PLUGIN_7_RESELLER_TXT|
+<span class="plugin">|PLUGIN_4_RESELLER_TXT|</span>
+<span class="plugin">|PLUGIN_5_RESELLER_TXT|</span>
+<span class="plugin">|PLUGIN_6_RESELLER_TXT|</span>
+<span class="plugin">|PLUGIN_7_RESELLER_TXT|</span>
 END;
 }
 ?>
 DONE|
-
-</span>
 
 							</li>
 						</ul>

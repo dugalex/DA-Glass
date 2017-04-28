@@ -1,10 +1,20 @@
 #!/bin/bash
+cd /etc/directadmin/data/files
 
 chown root *; chgrp root *; chmod 644 *;
 chown root admin/*; chgrp root admin/*; chmod 644 admin/*;
-chown root icons/*; chgrp root icons/*; chmod 644 icons/*;
 chown root images/*; chgrp root images/*; chmod 644 images/*;
+
 chown root inc/*; chgrp root inc/*; chmod 644 inc/*;
+chown root inc/css/*; chgrp root inc/css/*; chmod 644 inc/css/*;
+chown root inc/fonts/*; chgrp root inc/fonts/*; chmod 644 inc/fonts/*;
+chown root inc/functions/*; chgrp root inc/functions/*; chmod 644 inc/functions/*;
+chown root inc/icons/*; chgrp root inc/icons/*; chmod 644 inc/icons/*;
+chown root inc/images/*; chgrp root inc/images/*; chmod 644 inc/images/*;
+chown root inc/js/*; chgrp root inc/js*/; chmod 644 inc/js/*;
+chown root inc/less/*; chgrp root inc/less/*; chmod 644 inc/less/*;
+chown root inc/scss/*; chgrp root inc/scss/*; chmod 644 inc/scss/*;
+
 chown root lang/*; chgrp root lang/*; chmod 644 lang/*;
 chown root lang/en/*; chgrp root lang/en/*; chmod 644 lang/en/*;
 chown root lang/en/admin/*; chgrp root lang/en/admin/*; chmod 644 lang/en/admin/*;
@@ -21,9 +31,16 @@ chown root user/ftp/*; chgrp root user/ftp/*; chmod 644 user/ftp/*;
 chown root user/ticket/*; chgrp root user/ticket/*; chmod 644 user/ticket/*;
 
 chmod 755 admin
-chmod 755 icons
 chmod 755 images
 chmod 755 inc
+chmod 755 inc/css
+chmod 755 inc/fonts
+chmod 755 inc/functions
+chmod 755 inc/icons
+chmod 755 inc/images
+chmod 755 inc/js
+chmod 755 inc/less
+chmod 755 inc/scss
 chmod 755 lang
 chmod 755 lang/en
 chmod 755 lang/en/admin

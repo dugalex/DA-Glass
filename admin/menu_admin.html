@@ -4,7 +4,7 @@
 
 						<ul id="menu">
 							<li>
-								<a href="/|HOME_MEMORY|">|LANG_HOME|</a>
+								<a href="/|HOME_MEMORY|"><i class="fa fa-home"></i> |LANG_HOME|</a>
 								<ul>
 									<li>
 										<a href="/">&raquo; |LANG_ADMIN_LEVEL|</a>
@@ -15,13 +15,13 @@
 								</ul>
 							</li>
 							<li>
-								<a href="#">|LANG_ACCOUNT|</a>
+								<a href="#"><i class="fa fa-user"></i> |LANG_ACCOUNT|</a>
 								<ul>
 									<li>
 										<a href="/HTM_ACCOUNT_ADMIN_CREATE">|LANG_CREATE_ADMIN|</a>
 										<a href="/CMD_ADMIN_SHOW">|LANG_LIST_ADMINS|</a>
 										<a href="/HTM_USER_PASSWD">|LANG_CHANGE_PASS|</a>
-										<a href="CMD_TICKET_MANAGE">|LANG_MANAGE_TICKETS| (<b>|NEWTICKETS|</b> |LANG_NEW|)</a>
+										<a href="/CMD_TICKET_MANAGE">|LANG_MANAGE_TICKETS| |*if NEWTICKETS!="0"| (<b class="warning">|NEWTICKETS|</b> |LANG_NEW|) |*endif|</a>
 										<a href="/HTM_ACCOUNT_RESELLER_CREATE">|LANG_CREATE_RESELLER|</a>
 										<a href="/CMD_RESELLER_SHOW">|LANG_LIST_RESELLERS|</a>
 										<a href="/CMD_MANAGE_RESELLER_PACKAGES">|LANG_RESELLER_PACKAGES|</a>
@@ -30,7 +30,7 @@
 								</ul>
 							</li>
 							<li>
-								<a href="#">|LANG_SERVER|</a>
+								<a href="#"><i class="fa fa-server"></i> |LANG_SERVER|</a>
 								<ul>
 									<li>
 										<a href="/CMD_IP_MANAGER">|LANG_IP_MANAGEMENT|</a>
@@ -41,63 +41,30 @@
 										<a href="/CMD_MAIL_QUEUE?sort1=2">|LANG_MAIL_Q_ADMIN|</a>
 										<a href="/CMD_MOVE_USERS">|LANG_MOVE_USERS|</a>
 										<a href="/CMD_SYSTEM_INFO">|LANG_SYSTEM_INFO|</a>
-										<a href="/CMD_SHOW_SERVICES">|LANG_SERVICE_MONITOR|</a>
-										|?PMSORT=-9||*if OS_TYPE="FreeBSD"||?PMSORT=-10||*endif|
 										<a href="/CMD_PROCESS_MONITOR?sort1=|PMSORT|">|LANG_PROCESS_MONITOR|</a>
+										|?PMSORT=-9||*if OS_TYPE="FreeBSD"||?PMSORT=-10||*endif|
+										<a href="/CMD_SHOW_SERVICES">|LANG_SERVICE_MONITOR|</a>
 										<a href="/CMD_SYSTEM_BACKUP">|LANG_SYS_BACKUP|</a>
-										<a href="/CMD_LOG_VIEWER">|LANG_LOG_VIEWER|</a>
 										<a href="/CMD_ADMIN_FILE_EDITOR">|LANG_FILE_EDITOR|</a>
+										<a href="/CMD_LOG_VIEWER">|LANG_LOG_VIEWER|</a>
 									</li>
 								</ul>
 							</li>
 							<li>
-								<a href="#">|LANG_EXTRA|</a>
+								<a href="#"><i class="fa fa-cubes"></i> |LANG_EXTRA|</a>
 								<ul>
 									<li>
-										<a href="CMD_ADMIN_STATS">|LANG_COMPLETE_USAGE_STATS|</a>
-										<a href="CMD_CUSTOM_HTTPD">|LANG_CUSTOM_HTTPD|</a>
-										<a href="CMD_PHP_SAFE_MODE">|LANG_PHP_SAFEMODE|</a>
-										<a href="CMD_BRUTE_FORCE_MONITOR?sort1=-1">|LANG_BRUTE_FORCE_MONITOR|</a>
-										<a href="CMD_ADMIN_SETTINGS">|LANG_ADMIN_SETTINGS|</a>
-										<a href="CMD_LICENSE">|LANG_LICENSE_UPDATES|</a>
-										<a href="CMD_PLUGIN_MANAGER">|LANG_PLUGIN_MANAGER|</a>
-										<a href="CMD_ADMIN_CRON_JOBS">|LANG_ADMIN_CRON_JOBS|</a>
+										<a href="/CMD_ADMIN_STATS">|LANG_COMPLETE_USAGE_STATS|</a>
+										<a href="/CMD_CUSTOM_HTTPD">|LANG_CUSTOM_HTTPD|</a>
+										<a href="/CMD_PHP_SAFE_MODE">|LANG_PHP_SAFEMODE|</a>
+										<a href="/CMD_BRUTE_FORCE_MONITOR?sort1=-1">|LANG_BRUTE_FORCE_MONITOR|</a>
+										<a href="/CMD_ADMIN_SETTINGS">|LANG_ADMIN_SETTINGS|</a>
+										<a href="/CMD_LICENSE">|LANG_LICENSE_UPDATES|<span id=program_updates class=count_notice style='visibility: hidden;'></span></a>
+										<a href="/CMD_PLUGIN_MANAGER">|LANG_PLUGIN_MANAGER|<span id=plugin_updates class=count_notice style='visibility: hidden;'></span></a>
+										<a href="/CMD_ADMIN_CRON_JOBS">|LANG_ADMIN_CRON_JOBS|</a>
 										<a href="/CMD_SKINS">|LANG_SKIN_MANAGER|</a>
-
-|$/usr/local/bin/php
-<?php
-$data = <<<END
-|PLUGIN_0_USER_TXT|
-END;
-if (strlen($data) > 1)
-{
-echo <<<END
-|PLUGIN_0_ADMIN_TXT|
-|PLUGIN_1_ADMIN_TXT|
-|PLUGIN_2_ADMIN_TXT|
-|PLUGIN_3_ADMIN_TXT|
-END;
-}
-?>
-DONE|
-|$/usr/local/bin/php
-<?php
-$data = <<<END
-|PLUGIN_2_USER_TXT|
-END;
-if (strlen($data) > 1)
-{
-echo <<<END
-|PLUGIN_4_ADMIN_TXT|
-|PLUGIN_5_ADMIN_TXT|
-|PLUGIN_6_ADMIN_TXT|
-|PLUGIN_7_ADMIN_TXT|
-END;
-}
-?>
-DONE|
-
 									</li>
 								</ul>
 							</li>
+							<li><a href="/HTM_PASSWD"><i class="fa fa-lock"></i> |LANG_PASSWORD|</a></li>
 						</ul>

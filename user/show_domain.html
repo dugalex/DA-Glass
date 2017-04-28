@@ -7,7 +7,7 @@
 								<a class="change_password" href="/HTM_PASSWD?domain=|domain|">|LANG_CHANGE_PASSWORD|</a>
 								<a class="login_history" href="/CMD_LOGIN_HISTORY?domain=|domain|">|LANG_LOGIN_HISTORY|</a>
 								<a class="create_backup" href="/CMD_SITE_BACKUP?domain=|domain|">|LANG_CREATE_RESTORE_BACKUPS|</a>
-								<a class="support_center" href="/CMD_TICKET?domain=|domain|">|LANG_SUPPORT_CENTER|</a>
+								<a class="support_center" href="/CMD_TICKET?domain=|domain|">|LANG_SUPPORT_CENTER| |*if NEWMESSAGES!="0"| (<b class="warning">|NEWMESSAGES|</b> |LANG_NEW|) |*endif|</a>
 								<a class="site_summary" href="/CMD_USER_STATS?domain=|domain|">|LANG_SITE_SUM_STATS_LOGS|</a>
 							</li>
 						</ul>
@@ -17,7 +17,7 @@
 			<br/>
 			<table class="table" cellspacing="1">
 				<tr>
-					<td class="title"><div class="icon"><img src="/IMG_ICON_EMAILS"/></div>|LANG_TITLE_EMAIL|</td>
+					<td class="title"><div class="icon email_management"></div>|LANG_TITLE_EMAIL|</td>
 				</tr>
 				<tr>
 					<td class="content">
@@ -79,7 +79,7 @@
 			<br/>
 			<table class="table" cellspacing="1">
 				<tr>
-					<td class="title"><div class="icon"><img src="/IMG_ICON_FILES"/></div>|LANG_TITLE_FILE|</td>
+					<td class="title"><div class="icon file_management"></div>|LANG_TITLE_FILE|</td>
 				</tr>
 				<tr>
 					<td class="content">
@@ -99,7 +99,7 @@
 			<br/>
 			<table class="table" cellspacing="1">
 				<tr>
-					<td class="title"><div class="icon"><img src="/IMG_ICON_DOMAINS"/></div>|LANG_TITLE_DOMAIN|</td>
+					<td class="title"><div class="icon domain_management"></div>|LANG_TITLE_DOMAIN|</td>
 				</tr>
 				<tr>
 					<td class="content">
@@ -127,7 +127,7 @@
 			<br/>
 			<table class="table" cellspacing="1">
 				<tr>
-					<td class="title"><div class="icon"><img src="/IMG_ICON_DATABASES"/></div>|LANG_TITLE_DATABASE|</td>
+					<td class="title"><div class="icon database_management"></div>|LANG_TITLE_DATABASE|</td>
 				</tr>
 				<tr>
 					<td class="content">
@@ -145,7 +145,7 @@
 			<br/>
 			<table class="table" cellspacing="1">
 				<tr>
-					<td class="title"><div class="icon"><img src="/IMG_ICON_EXTRA"/></div>|LANG_TITLE_EXTRA|</td>
+					<td class="title"><div class="icon extra_features"></div>|LANG_TITLE_EXTRA|</td>
 				</tr>
 				<tr>
 					<td class="content">
@@ -170,20 +170,18 @@
 								<a class="ssl_certificates" href="/CMD_SSL?domain=|domain|">|LANG_SSL_CERTS|</a>
 							|*endif|
 
-<span class="plugins">
-
 |$/usr/local/bin/php
 <?php
 $data = <<<END
-|PLUGIN_0_TXT|
+<span class="plugin">|PLUGIN_0_TXT|</span>
 END;
 if (strlen($data) > 1)
 {
 echo <<<END
-|PLUGIN_0_TXT|
-|PLUGIN_1_TXT|
-|PLUGIN_2_TXT|
-|PLUGIN_3_TXT|
+<span class="plugin">|PLUGIN_0_TXT|</span>
+<span class="plugin">|PLUGIN_1_TXT|</span>
+<span class="plugin">|PLUGIN_2_TXT|</span>
+<span class="plugin">|PLUGIN_3_TXT|</span>
 END;
 }
 ?>
@@ -194,15 +192,15 @@ DONE|
 |$/usr/local/bin/php
 <?php
 $data = <<<END
-|PLUGIN_2_TXT|
+<span class="plugin">|PLUGIN_2_TXT|</span>
 END;
 if (strlen($data) > 1)
 {
 echo <<<END
-|PLUGIN_4_TXT|
-|PLUGIN_5_TXT|
-|PLUGIN_6_TXT|
-|PLUGIN_7_TXT|
+<span class="plugin">|PLUGIN_4_TXT|</span>
+<span class="plugin">|PLUGIN_5_TXT|</span>
+<span class="plugin">|PLUGIN_6_TXT|</span>
+<span class="plugin">|PLUGIN_7_TXT|</span>
 END;
 }
 ?>

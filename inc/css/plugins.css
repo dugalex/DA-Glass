@@ -1,0 +1,76 @@
+* {
+	font-size:12px;
+	line-height:18px;
+	font-family:'OpenSans',sans-serif;
+}
+a, a:visited, a:active, input, textarea, select, .tree, .tree a  {
+	text-decoration:none;
+	color:rgba(0,0,0,0.75);
+}
+a:hover, .theme a:hover, a.tree:hover, a.title:hover, a.listtitle:hover, td.footer a:hover, a.tabtext:hover, ul#menu li a:hover, ul#menu li ul li a:hover, ul#content li a:hover, 
+td.listtitle input:hover, td.listtitle textarea:hover, input[type=button]:hover, input[type=submit]:hover, input[type=checkbox]:hover, 
+td.listtitle input[type=button]:hover, td.listtitle input[type=submit]:hover, td.listtitle input[type=checkbox]:hover, 
+.expand_toggle_neg:hover, .expand_toggle_plus:hover 
+{
+	text-decoration:none;
+	color:rgb(50,125,200);
+}
+.title, .title a, .listtitle, .listtitle a, td.footer, td.footer a, .blue_gradient, .welcome, a.tabtext, .white {
+	font-family:'OpenSans-Bold', sans-serif;
+	text-decoration:none;
+}
+.custombuild {
+	width:920px;
+	margin:0 0px;
+}
+.table {
+	padding:0px;
+	margin-top:15px;
+	margin-bottom:0px;
+	line-height:18px;
+	border-top:0px;
+	border-bottom:0px;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+	padding:12px;
+	padding-left:15px;
+	line-height:18px;
+	vertical-align:middle;
+	border-top:0px solid #dddddd;
+	border-bottom:1px solid rgba(0,0,0,0.01);
+}
+.panel {
+	background:rgba(255,255,255,0.15);
+}
+.panel-default {
+	border-color:rgba(0,0,0,0.25);
+}
+
+.panel-default>.panel-heading {
+	text-shadow:0px 0px 3px 0px rgba(0,0,0,0.15);
+	background-color:rgba(255,255,255,0.35);
+	border-color:rgba(0,0,0,0.25);
+}
+.nav-tabs {
+	border-bottom:rgba(255,255,255,0.25);
+}
+.nav-tabs>li>a {
+	background-color:rgba(255,255,255,0.10);
+	border-color:rgba(255,255,255,0.25);
+	margin-bottom:3px;
+}
+.nav-tabs>li>a:hover {
+	background-color:rgba(255,255,255,0.20);
+}
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus {
+	text-shadow:0px 0px 3px 0px rgba(0,0,0,0.25);
+	background-color:rgba(255,255,255,0.35);
+	border-color:rgba(0,0,0,0.25);
+	color:rgb(0,0,0);
+	font-weight:bold;
+}

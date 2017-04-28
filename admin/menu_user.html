@@ -2,7 +2,7 @@
 |LF_USER_CONTENT|
 						<ul id="menu">
 							<li>
-								<a href="/|HOME_MEMORY|">|LANG_HOME|</a>
+								<a href="/|HOME_MEMORY|"><i class="fa fa-home"></i> |LANG_HOME|</a>
 								<ul>
 									<li>
 										<a href="/">|LANG_ADMIN_LEVEL|</a>
@@ -13,19 +13,19 @@
 								</ul>
 							</li>
 							<li>
-								<a href="#">|LANG_ACCOUNT|</a>
+								<a href="#"><i class="fa fa-user"></i> |LANG_ACCOUNT|</a>
 								<ul>
 									<li>
 										<a href="/HTM_PASSWD?domain=|domain|">|LANG_CHANGE_PASSWORD|</a>
 										<a href="/CMD_SITE_BACKUP?domain=|domain|">|LANG_CREATE_RESTORE_BACKUPS|</a>
-										<a href="/CMD_TICKET?domain=|domain|">|LANG_SUPPORT_CENTER|</a>
+										<a href="/CMD_TICKET?domain=|domain|">|LANG_SUPPORT_CENTER| |*if NEWMESSAGES!="0"| (<b class="warning">|NEWMESSAGES|</b> |LANG_NEW|) |*endif|</a>
 										<a href="/CMD_LOGIN_HISTORY?domain=|domain|">|LANG_LOGIN_HISTORY|</a>
 										<a href="/CMD_USER_STATS?domain=|domain|">|LANG_SITE_SUM_STATS_LOGS|</a>
 									</li>
 								</ul>
 							</li>
 							<li>
-								<a href="#">|LANG_EMAILS|</a>
+								<a href="#"><i class="fa fa-envelope"></i> |LANG_EMAILS|</a>
 								<ul>
 									<li>
 									|*if USEREMAILMAX!="0"|
@@ -80,7 +80,7 @@
 								</ul>
 							</li>
 							<li>
-								<a href="#">|LANG_FILES2|</a>
+								<a href="#"><i class="fa fa-files-o"></i> |LANG_FILES2|</a>
 								<ul>
 									<li>
 										<a href="/CMD_FILE_MANAGER?domain=|domain|">|LANG_FILE_MANAGER|</a>
@@ -93,7 +93,7 @@
 								</ul>
 							</li>
 							<li>
-								<a href="#">|LANG_DOMAINS|</a>
+								<a href="#"><i class="fa fa-globe"></i> |LANG_DOMAINS|</a>
 								<ul>
 									<li>
 									|*if ALLOWED_CMD_DOMAIN!="no"|
@@ -114,7 +114,7 @@
 								</ul>
 							</li>
 							<li>
-								<a href="#">|LANG_DATABASES|</a>
+								<a href="#"><i class="fa fa-database"></i> |LANG_DATABASES|</a>
 								<ul>
 									<li>
 									|*if USERDATABASEMAX!="0"|
@@ -125,7 +125,7 @@
 								</ul>
 							</li>
 							<li>
-								<a href="#">|LANG_EXTRA|</a>
+								<a href="#"><i class="fa fa-cubes"></i> |LANG_EXTRA|</a>
 								<ul>
 									<li>
 										<a href="/CMD_HANDLERS?domain=|domain|">|LANG_APACHE_HANDLERS|</a>
@@ -186,5 +186,5 @@ DONE|
 									</li>
 								</ul>
 							</li>
+							<li><a href="/HTM_PASSWD?domain=|domain|"><i class="fa fa-lock"></i> |LANG_PASSWORD|</a></li>
 						</ul>
-						

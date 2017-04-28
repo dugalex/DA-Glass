@@ -10,7 +10,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=|LANG_ENCODING|" />
 	<title>|HOSTNAME| - |DEAMONNAME| v|VERSION|</title>
 	<link rel='icon' href='/IMG_SKIN_ICON' type='image/x-icon'>
-	<script language="JavaScript">
+	<link rel='shortcut icon' href='/IMG_ICON_FAVICON' type='image/x-icon'>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="/JS_INFO"></script>
+<script language="javascript">
+        if (typeof(ajax_start) != "undefined") {
+                var url="CMD_PLUGINS_ADMIN/custombuild/ajax_count.raw?rand="+Math.random();
+                ajax_start(url, 'cb_updates', '');
+        }
+</script>	<script language="JavaScript">
 	<!-- // start preload code
 	//timer for auto-logout
 		function log_me_out()
@@ -21,13 +29,9 @@
 
 	// done with preload code -->
 	</script>
-	
-	<link href="/CSS_DAGLASS?v=|VERSION|" type="text/css" rel="stylesheet" />
-	<link href="/CSS_ICONS" type="text/css" rel="stylesheet" />
+
+	<link href="/CSS_DA_AIO?v=|VERSION|" type="text/css" rel="stylesheet" />
 	<link href="/CSS_GRAY" type="text/css" rel="stylesheet" media="screen" title="gray-theme" />
-	<!--[if lte IE 9]>
-	<link href="/CSS_IE8" type="text/css" rel="stylesheet" />
-	<![endif]-->
 	<link href="/CSS_BLUE" type="text/css" rel="alternate stylesheet" media="screen" title="blue-theme" />
 	<link href="/CSS_GREEN" type="text/css" rel="alternate stylesheet" media="screen" title="green-theme" />
 	<link href="/CSS_YELLOW" type="text/css" rel="alternate stylesheet" media="screen" title="yellow-theme" />
@@ -37,6 +41,16 @@
 	<link href="/CSS_BROWN" type="text/css" rel="alternate stylesheet" media="screen" title="brown-theme" />
 	<link href="/CSS_BLACK" type="text/css" rel="alternate stylesheet" media="screen" title="black-theme" />
 	<link href="/CSS_BW" type="text/css" rel="alternate stylesheet" media="screen" title="bw-theme" />
+	<link href="/CSS_V1" type="text/css" rel="alternate stylesheet" media="screen" title="v1" />
+	<link href="/CSS_V2" type="text/css" rel="alternate stylesheet" media="screen" title="v2" />
+	<link href="/CSS_V3" type="text/css" rel="alternate stylesheet" media="screen" title="v3" />
+	<link href="/CSS_COLORS" type="text/css" rel="stylesheet" />
+	<link href="/CSS_ICONS" type="text/css" rel="stylesheet" />
+	<link href="/CSS_FONT" type="text/css" rel="stylesheet" />
+	<!--[if lte IE 9]>
+	<link href="/CSS_IE8" type="text/css" rel="stylesheet" />
+	<![endif]-->
+
 |*if TABLE_HIGHLIGHTING="1"|
 	<script type="text/javascript">
 	<!-- // start preload code
@@ -82,13 +96,13 @@
 	// done with preload code -->
 	</script>
 |*endif|
-<script src="/CSS_SWITCH" type="text/javascript">
-/***********************************************
-* Style Sheet Switcher v1.1- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
-* This notice MUST stay intact for legal use
-* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
-***********************************************/
-</script>
+	<script type="text/javascript" src="/JS_SWITCH">
+	/***********************************************
+	* Style Sheet Switcher v1.1- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+	* This notice MUST stay intact for legal use
+	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+	***********************************************/
+	</script>
 </head>
 
 <body>
@@ -108,26 +122,31 @@
 				<tr>
 					<td class="title">
 						<div class="colors">
-							<a href="javascript:chooseStyle('gray-theme', 999)" title="Gray" checked="checked"><div class="gray"></div></a>
-							<a href="javascript:chooseStyle('blue-theme', 999)" title="Blue"><div class="blue"></div></a>
-							<a href="javascript:chooseStyle('green-theme', 999)" title="Green"><div class="green"></div></a>
-							<a href="javascript:chooseStyle('yellow-theme', 999)" title="Yellow"><div class="yellow"></div></a>
-							<a href="javascript:chooseStyle('pink-theme', 999)" title="Pink"><div class="pink"></div></a>
-							<a href="javascript:chooseStyle('purple-theme', 999)" title="Purple"><div class="purple"></div></a>
-							<a href="javascript:chooseStyle('red-theme', 999)" title="Red"><div class="red"></div></a>
-							<a href="javascript:chooseStyle('brown-theme', 999)" title="Brown"><div class="brown"></div></a>
-							<a href="javascript:chooseStyle('black-theme', 999)" title="Black"><div class="black"></div></a>
-							<a href="javascript:chooseStyle('bw-theme', 999)" title="Black&amp;White"><div class="bw"></div></a>
+							<a href="javascript:chooseStyle('gray-theme', 999)" title="Gray" checked="checked"><div class="theme gray"></div></a>
+							<a href="javascript:chooseStyle('blue-theme', 999)" title="Blue"><div class="theme blue"></div></a>
+							<a href="javascript:chooseStyle('green-theme', 999)" title="Green"><div class="theme green"></div></a>
+							<a href="javascript:chooseStyle('yellow-theme', 999)" title="Yellow"><div class="theme yellow"></div></a>
+							<a href="javascript:chooseStyle('pink-theme', 999)" title="Pink"><div class="theme pink"></div></a>
+							<a href="javascript:chooseStyle('purple-theme', 999)" title="Purple"><div class="theme purple"></div></a>
+							<a href="javascript:chooseStyle('red-theme', 999)" title="Red"><div class="theme red"></div></a>
+							<a href="javascript:chooseStyle('brown-theme', 999)" title="Brown"><div class="theme brown"></div></a>
+							<a href="javascript:chooseStyle('black-theme', 999)" title="Black"><div class="theme black"></div></a>
+							<a href="javascript:chooseStyle('bw-theme', 999)" title="Black&amp;White"><div class="theme bw"></div></a>
+							<div style="float:left; width:10px; color:transparent">.</div>
+							<a href="javascript:chooseStyle('v1', 999)" title="v1"><div class="theme v1">v1</div></a>
+							<a href="javascript:chooseStyle('v2', 999)" title="v2"><div class="theme v2">v2</div></a>
+							<a href="javascript:chooseStyle('v3', 999)" title="v3"><div class="theme v3">v3</div></a>
 						</div>
-						<div class="welcome">|WELCOME_BACK_TEXT|, |USERNAME| (|LAST_LOGIN_FROM_TEXT|: |LASTHOST|) <a href="/CMD_TICKET?sort1=-1" title="|LANG_MESS_SYS|">|*if NEWMESSAGES!="0"|<span class="count_notice blink">|NEWMESSAGES|</span>|*else|<span class="count_notice_none"></span>|*endif|</a></div>
+						<div class="welcome">|LANG_WELCOME_BACK|, |USERNAME| (|LANG_LAST_LOGIN_FROM|: |LASTHOST|) <a href="/CMD_TICKET?sort1=-1" title="|LANG_MESS_SYS|">|*if NEWMESSAGES!="0"|<span class="theme count_notice blink">|NEWMESSAGES|</span>|*else|<span class="theme count_notice_none">0</span>|*endif|</a></div>
 					</td>
 				</tr>
 				<tr>
 					<td class="header" valign="bottom">
 						<table style="width:100%; height:100px" cellspacing="0" cellpadding="0">
 							<tr>
-								<td>
-									<img style="padding-left:10px" alt="|DEAMONNAME|" longdesc="|DEAMONNAME| v|VERSION|" src="/IMG_SKIN_LOGO" />
+								<td style="position:relative">
+									<div id="info" class="barbg_yellow">|LANG_THEME_INFO|<a href="#" id="close" title="|LANG_THEME_INFO_CLOSE|"></a></div>
+									<img style="padding-left:10px" alt="|DEAMONNAME|" longdesc="|DEAMONNAME| v|VERSION|" src="/|LANG_IMG_SKIN_HEADER|" />
 								</td>
 							</tr>
 						</table>
