@@ -63,6 +63,38 @@
 										<a href="/CMD_PLUGIN_MANAGER">|LANG_PLUGIN_MANAGER|<span id=plugin_updates class=count_notice style='visibility: hidden;'></span></a>
 										<a href="/CMD_ADMIN_CRON_JOBS">|LANG_ADMIN_CRON_JOBS|</a>
 										<a href="/CMD_SKINS">|LANG_SKIN_MANAGER|</a>
+|$/usr/local/bin/php
+<?php
+$data = <<<END
+|PLUGIN_0_ADMIN_TXT|
+END;
+if (strlen($data) > 1)
+{
+echo <<<END
+|PLUGIN_0_ADMIN_TXT|
+|PLUGIN_1_ADMIN_TXT|
+|PLUGIN_2_ADMIN_TXT|
+|PLUGIN_3_ADMIN_TXT|
+END;
+}
+?>
+DONE|
+|$/usr/local/bin/php
+<?php
+$data = <<<END
+|PLUGIN_2_ADMIN_TXT|
+END;
+if (strlen($data) > 1)
+{
+echo <<<END
+|PLUGIN_4_ADMIN_TXT|
+|PLUGIN_5_ADMIN_TXT|
+|PLUGIN_6_ADMIN_TXT|
+|PLUGIN_7_ADMIN_TXT|
+END;
+}
+?>
+DONE|
 									</li>
 								</ul>
 							</li>

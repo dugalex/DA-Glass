@@ -13,12 +13,7 @@
 	<link rel='shortcut icon' href='/IMG_ICON_FAVICON' type='image/x-icon'>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	<script type="text/javascript" src="/JS_INFO"></script>
-<script language="javascript">
-        if (typeof(ajax_start) != "undefined") {
-                var url="CMD_PLUGINS_ADMIN/custombuild/ajax_count.raw?rand="+Math.random();
-                ajax_start(url, 'cb_updates', '');
-        }
-</script>	<script language="JavaScript">
+	<script language="JavaScript">
 	<!-- // start preload code
 	//timer for auto-logout
 		function log_me_out()
@@ -30,7 +25,7 @@
 	// done with preload code -->
 	</script>
 
-	<link href="/CSS_DA_AIO?v=|VERSION|" type="text/css" rel="stylesheet" />
+	<link href="/CSS_DA_AIO?v=|VERSION|&tokenize_css=yes" type="text/css" rel="stylesheet" />
 	<link href="/CSS_GRAY" type="text/css" rel="stylesheet" media="screen" title="gray-theme" />
 	<link href="/CSS_BLUE" type="text/css" rel="alternate stylesheet" media="screen" title="blue-theme" />
 	<link href="/CSS_GREEN" type="text/css" rel="alternate stylesheet" media="screen" title="green-theme" />
@@ -136,6 +131,11 @@
 							<a href="javascript:chooseStyle('v1', 999)" title="v1"><div class="theme v1">v1</div></a>
 							<a href="javascript:chooseStyle('v2', 999)" title="v2"><div class="theme v2">v2</div></a>
 							<a href="javascript:chooseStyle('v3', 999)" title="v3"><div class="theme v3">v3</div></a>
+						</div>
+						<div>
+							<a href="/CMD_LICENSE" title="DirectAdmin Update"><span id="program_updates" class="updates blink2" style="visibility: hidden;"></span></a>
+							<a href="/CMD_PLUGIN_MANAGER" title="Plugin Updates"><span id="plugin_updates" class="updates blink2" style="visibility: hidden;"></span></a>
+							<a href="/CMD_PLUGINS_ADMIN/custombuild/index.html" title="CustomBuild Updates"><span id="cb_updates" class="updates blink2" style="visibility: hidden;"></span></a>
 						</div>
 						<div class="welcome">|LANG_WELCOME_BACK|, |USERNAME| (|LANG_LAST_LOGIN_FROM|: |LASTHOST|) <a href="/CMD_TICKET?sort1=-1" title="|LANG_MESS_SYS|">|*if NEWMESSAGES!="0"|<span class="theme count_notice blink">|NEWMESSAGES|</span>|*else|<span class="theme count_notice_none">0</span>|*endif|</a></div>
 					</td>

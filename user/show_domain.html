@@ -160,6 +160,9 @@
 							|*if USERCRON="ON"|
 								<a class="cronjobs" href="/CMD_CRON_JOBS?domain=|domain|">|LANG_CRONJOBS|</a>
 							|*endif|
+							|*if LOGIN_KEYS_ENABLED="0"|
+							|?USERLOGINKEYS=OFF|
+							|*endif|
 							|*if USERLOGINKEYS="ON"|
 								<a class="login_keys" href="/CMD_LOGIN_KEYS">|LANG_LOGIN_KEYS|</a>
 							|*endif|
@@ -180,15 +183,14 @@ if (strlen($data) > 1)
 echo <<<END
 <span class="plugin">|PLUGIN_0_TXT|</span>
 <span class="plugin">|PLUGIN_1_TXT|</span>
-<span class="plugin">|PLUGIN_2_TXT|</span>
 <span class="plugin">|PLUGIN_3_TXT|</span>
+<span class="plugin">|PLUGIN_4_TXT|</span>
+<span class="plugin">|PLUGIN_5_TXT|</span>
 END;
 }
 ?>
 DONE|
-|*if LOGIN_KEYS_ENABLED="0"|
-|?USERLOGINKEYS=OFF|
-|*endif|
+
 |$/usr/local/bin/php
 <?php
 $data = <<<END
@@ -197,10 +199,11 @@ END;
 if (strlen($data) > 1)
 {
 echo <<<END
-<span class="plugin">|PLUGIN_4_TXT|</span>
-<span class="plugin">|PLUGIN_5_TXT|</span>
+<span class="plugin">|PLUGIN_2_TXT|</span>
 <span class="plugin">|PLUGIN_6_TXT|</span>
 <span class="plugin">|PLUGIN_7_TXT|</span>
+<span class="plugin">|PLUGIN_8_TXT|</span>
+<span class="plugin">|PLUGIN_9_TXT|</span>
 END;
 }
 ?>

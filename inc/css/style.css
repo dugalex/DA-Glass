@@ -77,12 +77,12 @@ td.title input:hover, td.title select:hover, td.listtitle input:hover, td.listti
 	color:rgba(255,255,255,0.50);
 }
 .welcome {
-	width:450px;
+	width:400px;
 	float:right;
 	text-align:right;
 }
 .colors {
-	width:450px;
+	width:400px;
 	float:left;
 }
 #info {
@@ -113,7 +113,7 @@ td.title input:hover, td.title select:hover, td.listtitle input:hover, td.listti
 	-moz-box-shadow:0px 0px 3px 0px rgb(185,185,185);
 	-webkit-box-shadow:0px 0px 3px 0px rgb(185,185,185);
 }
-.theme, .theme a, .count_notice, .count_notice_none, .service_on, .service_off {
+.theme, .theme a, .count_notice, .count_notice_none, .service_on, .service_off, .updates {
 	color:#fff;
 	float:left;
 	width:15px;
@@ -136,6 +136,10 @@ td.title input:hover, td.title select:hover, td.listtitle input:hover, td.listti
 	-moz-box-shadow:0px 0px 5px 0px rgb(255,255,255);
 	-webkit-box-shadow:0px 0px 5px 0px rgb(255,255,255);
 }
+.updates a {
+	display:block;
+	margin:0px auto;
+}
 .count_notice, .count_notice_none {
 	float:right;
 	margin-left:10px;
@@ -157,6 +161,23 @@ td.title input:hover, td.title select:hover, td.listtitle input:hover, td.listti
 @-webkit-keyframes blink {
 	0% {background:#008800}
 	50% {background:#b1e1b1}
+}
+.blink2 {
+	animation:blink2 1s step-end infinite;
+	-moz-animation:blink2 1s step-end infinite;
+	-webkit-animation:blink2 1s step-end infinite;
+}
+@keyframes blink2 {
+	0% {background:#008800}
+	50% {background:#cc0000}
+}
+@-moz-keyframes blink2 {
+	0% {background:#008800}
+	50% {background:#cc0000}
+}
+@-webkit-keyframes blink2 {
+	0% {background:#008800}
+	50% {background:#cc0000}
 }
 .service_on, .service_off {
 	border:1px solid rgba(0,0,0,0.60);
@@ -282,16 +303,15 @@ ul#content li a {
 	position:relative;
 }
 #program_updates, #plugin_updates, #cb_updates  {
-	position:inherit;
-	z-index:10;
-	right:135px;
+/	position:relative;
+/	z-index:10;
 }
 #plugin_updates {
-	right:160px;
+/	right:160px;
 }
 #cb_updates {
-	bottom:28px;
-	right:170px;
+/	bottom:28px;
+/	right:170px;
 }
 table.table {
 	width:100%;
@@ -680,4 +700,23 @@ td.message_info {
 	display:inline-block;
 	box-shadow:1px 1px 3px #727272;
 	margin:5px;
+}
+.color_box {
+	margin-right: 10px;
+	padding-right: 100px;
+	border: 1px solid black;
+}
+.color_picker {
+	width: 105px;
+	margin-right: 10px;
+}
+.no_decore {
+	TEXT-DECORATION: none;
+}
+.warning_info {
+	background: #ffffcc;
+	border: 1px solid #ff9900;
+	color: #4d3300;
+	text-align: center;
+	padding: 10px;
 }
