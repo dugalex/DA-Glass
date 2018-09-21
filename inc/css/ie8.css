@@ -57,11 +57,11 @@ td.header, td.content, td.stats {
 table.list, div.list {
 	background:#fff;
 }
-td.list, td.listwrap, .bar-row2 {
+td.list, td.listwrap, .bar-row2, tr:nth-child(odd) > td.list_alt, tr:nth-child(odd) > td.listwrap_alt {
 	border-bottom:1px solid #e7e7e7;
 	background:#f4f4f4;
 }
-td.list2, td.listwrap2, .bar-row1 {
+td.list2, td.listwrap2, .bar-row1, tr:nth-child(even) > td.list_alt, tr:nth-child(even) > td.listwrap_alt {
 	border-bottom:1px solid #e7e7e7;
 	background:#f0f0f0;
 }

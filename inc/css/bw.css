@@ -98,7 +98,7 @@ td.header, td.content, td.stats {
 	background:-moz-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.50) 100%);
 	background:-webkit-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.50) 100%);
 }
-td.list, td.listwrap, .bar-row2 {
+td.list, td.listwrap, .bar-row2, tr:nth-child(odd) > td.list_alt, tr:nth-child(odd) > td.listwrap_alt {
 	border-bottom:1px solid rgba(175,175,180,0.30);
 	background:rgba(175,175,180,0.20);
 	background:linear-gradient(top, rgba(175,175,180,0.15) 0%, rgba(175,175,180,0.25) 100%);
@@ -107,7 +107,7 @@ td.list, td.listwrap, .bar-row2 {
 	background:-moz-linear-gradient(top, rgba(175,175,180,0.15) 0%, rgba(175,175,180,0.25) 100%);
 	background:-webkit-linear-gradient(top, rgba(175,175,180,0.15) 0%, rgba(175,175,180,0.25) 100%);
 }
-td.list2, td.listwrap2, .bar-row1 {
+td.list2, td.listwrap2, .bar-row1, tr:nth-child(even) > td.list_alt, tr:nth-child(even) > td.listwrap_alt {
 	border-bottom:1px solid rgba(175,175,180,0.10);
 	background:rgba(175,175,180,0.15);
 	background:linear-gradient(top, rgba(175,175,180,0.25) 0%, rgba(175,175,180,0.15) 100%);

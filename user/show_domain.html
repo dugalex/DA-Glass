@@ -71,6 +71,16 @@
 							|*if HAVE_ATMAIL="yes"|
 								<a class="webmail" href="|HTTP|://|HOSTNAME|/atmail" target="_blank">|LANG_WEBMAIL_ATMAIL|</a>
 							|*endif|
+							|?CAN_MX=ON|
+							|*if USERDNSCONTROL!="ON"|
+							|?CAN_MX=OFF|
+							|*endif|
+							|*if LOCAL_MAILSERVER_WITHOUT_DNSCONTROL="1"|
+							|?CAN_MX=ON|
+							|*endif|
+							|*if CAN_MX="ON"|
+								<a class="mx_records" href="/CMD_DNS_MX?domain=|domain|">|LANG_MX_RECORDS|</a>
+							|*endif|
 							</li>
 						</ul>
 					</td>
@@ -117,6 +127,15 @@
 							|*endif|
 							|*if USERDNSCONTROL="ON"|
 								<a class="dns_management" href="/CMD_DNS_CONTROL?domain=|domain|">|LANG_DNS_MANAGEMENT|</a>
+							|*endif|				
+							|?CAN_MX=ON|
+							|*if USERDNSCONTROL!="ON"|
+							|?CAN_MX=OFF|
+							|*endif|
+							|*if LOCAL_MAILSERVER_WITHOUT_DNSCONTROL="1"|
+							|?CAN_MX=ON|
+							|*endif|
+							|*if CAN_MX="ON"|
 								<a class="mx_records" href="/CMD_DNS_MX?domain=|domain|">|LANG_MX_RECORDS|</a>
 							|*endif|
 							</li>
@@ -213,5 +232,5 @@ DONE|
 
 							</li>
 						</ul>
-
+						
 |HTM_USER_BOTTOM|
