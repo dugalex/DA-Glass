@@ -26,6 +26,7 @@ cd /usr/local/directadmin/data/skins/
 wget https://github.com/dugalex/DA-Glass/archive/master.zip
 unzip master.zip
 \cp -pru DA-Glass-master/* da-glass
+chown -R diradmin:diradmin da-glass
 rm -rf DA-Glass-master
 rm -f master.zip
 exit
