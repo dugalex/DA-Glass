@@ -114,6 +114,9 @@ function showUserMessage()
 								<a class="nameservers" href="/CMD_NAME_SERVER">|LANG_NAMESERVERS|</a>
 								<a class="skin_manager" href="/CMD_SKINS">|LANG_SKIN_MANAGER|</a>
 								<a class="create_backup" href="/CMD_USER_BACKUP">|LANG_USER_BACKUPS|</a>
+								|*if USERSSH="ON"|
+								<a class="ssh_keys" href="/CMD_SSH_KEYS">|LANG_SSH_KEYS|</a>
+								|*endif|
 							</li>
 						</ul>
 					</td>

@@ -185,6 +185,9 @@
 							|*if USERLOGINKEYS="ON"|
 								<a class="login_keys" href="/CMD_LOGIN_KEYS">|LANG_LOGIN_KEYS|</a>
 							|*endif|
+							|*if USERSSH="ON"|
+								<a class="ssh_keys" href="/CMD_SSH_KEYS">|LANG_SSH_KEYS|</a>
+							|*endif|
 							|*if USERSYSINFO="ON"|
 								<a class="server_information" href="/CMD_SYSTEM_INFO?domain=|domain|">|LANG_SERVER_INFO|</a>
 							|*endif|

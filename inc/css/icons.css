@@ -156,6 +156,9 @@
 .login_keys {
 	background:url('/IMG_ICON_LOGIN_KEYS')left no-repeat;
 }
+.ssh_keys {
+	background:url('/IMG_ICON_SSH_KEYS')left no-repeat;
+}
 .server_information {
 	background:url('/IMG_ICON_SERVER_INFORMATION')left no-repeat;
 }
